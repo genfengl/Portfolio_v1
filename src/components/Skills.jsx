@@ -15,20 +15,24 @@ const Skills = () => {
         <section id="Skills">
             {/* Skills Title */}
             <div className="flex flex-col justify-center items-center pb-6">
-                    <div className='text-center mt-0.5 bg-pink-600 h-4 w-[7.7rem] translate-y-12'></div>
-                    <div className="relative text-5xl text-center font-bold"> Skills</div>
-                </div>
-            <div className="container mx-auto flex flex-col px-6 py-16 gap-6 md:grid md:grid-cols-2 md:gap-0">
-                
+                <div className='text-center mt-0.5 bg-pink-600 h-4 w-[7.7rem] translate-y-12'></div>
+                <div className="relative text-5xl text-center font-bold"> Skills</div>
+            </div>
+            <div className="container mx-auto flex flex-col px-6 py-16 gap-6 
+            md:grid md:max-lg:grid-cols-2 lg:grid-cols-3 md:gap-0">
+
                 {/* Software Dev Section */}
                 <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word xs:p-10">
+                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word 
+                    xs:max-lg:p-10 xl:p-10 md:max-lg:border-b-2 md:border-r-2">
                         {/* Software Dev Title */}
-                        <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl'>
+                        <div className='text-3xl font-bold flex items-center gap-5 
+                        sm:max-md:text-4xl 2xl:text-4xl'>
                             <div><FaStackOverflow className='text-5xl' /></div>
                             <div>
                                 <div className='mt-0.5 bg-orange-500 h-2 w-32 translate-y-8
-                                sm:max-md:translate-y-9 sm:max-md:w-[24rem]'></div>
+                                sm:max-md:translate-y-9 sm:max-md:w-[24rem] 2xl:translate-y-9
+                                2xl:w-[9.7rem]'></div>
                                 {/* Set span position to relative so that it will display on top of the div above */}
                                 <span className='relative'>Software Development</span>
                             </div>
@@ -36,7 +40,7 @@ const Skills = () => {
                         {/* Software Dev skills */}
                         <div className='grid grid-cols-2 grid-rows-2 gap-3 text-xl mb-3'>
                             {/* Javascript */}
-                            <div className='flex items-center gap-3 text-base sm:max-md:text-xl'>
+                            <div className='flex items-center gap-3 text-base sm:max-md:text-xl xl:text-xl '>
                                 <FaJsSquare className='text-3xl text-yellow-300' />
                                 Javascript
                             </div>
@@ -48,7 +52,7 @@ const Skills = () => {
                                 Python
                             </div>
                             {/* Typescript */}
-                            <div className='flex items-center gap-3 text-base sm:max-md:text-xl'>
+                            <div className='flex items-center gap-3 text-base sm:max-md:text-xl xl:text-xl'>
                                 <div className='w-[30px] flex justify-center'>
                                     <svg viewBox="0 0 128 128" className='w-[28px]'>
                                         <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path><path data-name="original" fill="#007acc" d="M1.5 63.91v62.5h125v-125H1.5zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1 23 23 0 01-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73L82 101l3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H56.66v46.23H45.15V69.26H28.88v-5a49.19 49.19 0 01.12-5.17C29.08 59 39 59 51 59h21.83z"></path>
@@ -76,34 +80,37 @@ const Skills = () => {
                 </div>
                 {/* Frontend Dev Section */}
                 <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word xs:p-10">
+                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word 
+                    xs:max-lg:p-10 xl:p-10 md:max-lg:border-b-2 md:border-l-2 lg:border-r-2">
                         {/* Frontend Dev Title */}
-                        <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl'>
+                        <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl
+                        2xl:text-4xl'>
                             <div>
                                 <FaReact className='text-5xl' />
                             </div>
                             <div>
                                 <div className='mt-0.5 bg-blue-600 h-2 w-32 translate-y-8 
-                                sm:max-md:translate-y-9 sm:max-md:w-[24rem]'></div>
+                                sm:max-md:translate-y-9 sm:max-md:w-[24rem] 2xl:translate-y-9
+                                2xl:w-[9.6rem]'></div>
                                 {/* Set span position to relative so that it will display on top of the div above */}
                                 <span className='relative'>Frontend Development</span>
                             </div>
                         </div>
                         {/* Fronted Dev Skills */}
                         <div className='grid grid-cols-2 grid-rows-2 gap-3 text-xl mb-3'>
-                            {/* Javascript */}
+                            {/* React */}
                             <div className='flex items-center gap-3'>
                                 <FaReact className='text-3xl text-[#61DBFB]' />
                                 React.js
                             </div>
-                            {/* Python */}
+                            {/* HTML */}
                             <div className='flex items-center gap-3'>
                                 <div>
                                     <FaHtml5 className='text-3xl text-orange-500' />
                                 </div>
                                 HTML
                             </div>
-                            {/* UX/UI */}
+                            {/* CSS*/}
                             <div className='flex items-center gap-3'>
                                 <FaCss3Alt className='text-3xl text-blue-500' />
                                 CSS
@@ -114,12 +121,12 @@ const Skills = () => {
                                 Tailwind
                             </div>
                             {/* Bootstrap */}
-                            <div className='flex items-center gap-3 text-base sm:max-md:text-xl xs:text-lg'>
+                            <div className='flex items-center gap-3 text-base sm:max-md:text-xl xs:text-lg xl:text-xl'>
                                 <SiBootstrap className='text-3xl text-violet-600' />
                                 Bootstrap
                             </div>
-                            {/* UI/UX */}
-                            <div className='flex items-center gap-3 text-base sm:max-md:text-xl'>
+                            {/* MaterialUI */}
+                            <div className='flex items-center gap-3 text-base sm:max-md:text-xl xl:text-xl'>
                                 <SiMaterialui className='text-3xl text-sky-500' />
                                 MaterialUI
                             </div>
@@ -129,13 +136,16 @@ const Skills = () => {
                 </div>
                 {/* Backend Dev Section */}
                 <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word xs:p-10">
+                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word 
+                    xs:max-lg:p-10 xl:p-10 md:max-lg:border-t-2 md:max-lg:border-r-2 lg:border-l-2">
                         {/* Backend Dev Title */}
-                        <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl'>
+                        <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl
+                        2xl:text-4xl'>
                             <div><FaNodeJs className='text-5xl' /></div>
                             <div className=''>
                                 <div className='mt-0.5 bg-emerald-600 h-2 w-[7.7rem] translate-y-8 
-                                sm:max-md:translate-y-9 sm:max-md:w-[23.7rem]'></div>
+                                sm:max-md:translate-y-9 sm:max-md:w-[23.7rem] 2xl:translate-y-9
+                                2xl:w-[9.3rem]'></div>
                                 {/* Set span position to relative so that it will display on top of the div above */}
                                 <span className='relative'>Backend Development</span>
                             </div>
@@ -148,7 +158,7 @@ const Skills = () => {
                                 Node.js
                             </div>
                             {/* Express.js */}
-                            <div className='flex items-center gap-3 text-base sm:max-md:text-xl'>
+                            <div className='flex items-center gap-3 text-base sm:max-md:text-xl xl:text-xl'>
                                 <SiExpress className='text-3xl' />
                                 Express.js
                             </div>
@@ -158,12 +168,12 @@ const Skills = () => {
                                 Flask
                             </div>
                             {/* PostgreSQL */}
-                            <div className='flex items-center gap-3 text-[14px] sm:max-md:text-xl'>
+                            <div className='flex items-center gap-3 text-[14px] sm:max-md:text-xl xl:text-xl'>
                                 <SiPostgresql className='text-3xl text-blue-500' />
                                 PostgreSQL
                             </div>
                             {/* MongoDB */}
-                            <div className='flex items-center gap-3 text-lg sm:max-md:text-xl'>
+                            <div className='flex items-center gap-3 text-lg sm:max-md:text-xl xl:text-xl'>
                                 <SiMongodb className='text-3xl text-green-500' />
                                 MongoDB
                             </div>
@@ -176,16 +186,34 @@ const Skills = () => {
                     </div>
 
                 </div>
-                <div className='w-[330px] h-[330px]'>
-                    <Player 
-                    src='https://assets1.lottiefiles.com/packages/lf20_7smeegra.json' 
-                    className='player'
-                    loop
-                    autoplay
-                    />
+                {/* Learning Section */}
+                <div>
+                    <div className="flex-col gap-6 p-6 border-4 border-word h-[318px] hidden
+                    xs:p-10 md:border-t-2 md:border-l-2 md:max-lg:flex">
+                        {/* Learning Title */}
+                        <div className='text-3xl font-bold flex items-center gap-5 '>
+                            <div>
+                                <Player
+                                    src='https://assets1.lottiefiles.com/packages/lf20_lMdZ2NUeMB.json'
+                                    className='player w-[60px]'
+                                    loop
+                                    autoplay
+                                />
+                            </div>
+                            <div>
+                                <div className='mt-0.5 bg-rose-500 h-2 w-[9.8rem] translate-y-8 
+                                sm:max-md:translate-y-9 sm:max-md:w-[23.7rem]'></div>
+                                <span className='relative'>Never Stop Learning</span>
+                            </div>
 
+                        </div>
+                        <div className='text-2xl font-bold'>
+                            Because life never stops teaching...
+                        </div>
+
+
+                    </div>
                 </div>
-
             </div>
         </section>
     )
