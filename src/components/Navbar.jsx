@@ -2,28 +2,30 @@
 const Navbar = () => {
     return (
         // Navbar
-        <nav className="py-6 px-6 mt-6 sticky top-0 sm:mx-6">
+        <div className="py-6 px-6 sticky top-0 sm:mx-6 backdrop-blur-xl">
             {/* Flex container */}
-            <div className="flex justify-between">
+            <div className="flex justify-between sticky">
                 {/* Brand */}
                 <div className="font-bold text-2xl flex gap-2 items-center">
                     <img src="/logo.gif" className="h-6 w-6" />  GeraldLiu
                 </div>
                 {/* Navlinks */}
-                <div className="flex justify-between gap-4 items-center">
-
-                    <div className="col-start-7 col-span-1 text-l">
-                        Skills
+                <div className="justify-between gap-4 items-center text-lg hidden md:flex">
+                    <div>
+                        <a href="#skills">Skills</a>
                     </div>
-                    <div className="col-start-8 col-span-1 ">
-                        Projects
+                    <div>
+                        <a href="#projects">Projects</a>
                     </div>
-                    <div className="col-start-9 col-span-1">
+                    <div>
+                        Resume
+                    </div>
+                    <div>
                         Contact
                     </div>
                 </div>
             </div>
-        </nav>
+        </div>
     )
 }
 export default Navbar

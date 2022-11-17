@@ -12,7 +12,7 @@ import { Player } from '@lottiefiles/react-lottie-player';
 
 const Skills = () => {
     return (
-        <section id="Skills">
+        <section id="skills">
             {/* Skills Title */}
             <div className="flex flex-col justify-center items-center pb-6">
                 <div className='text-center mt-0.5 bg-pink-600 h-4 w-[7.7rem] translate-y-12'></div>

@@ -10,9 +10,10 @@ import Projects from './components/Projects'
 function App() {
 
   return (
-    <div className="relative w-full max-w">
-      <div className="bg-materialBlack text-word flex flex-col gap-6 overflow-hidden">
-        <Navbar />
+    <div className="relative bg-materialBlack text-word w-full max-w scroll-smooth">
+      <Navbar />
+      <div className=" flex flex-col gap-6 overflow-y-visible overflow-x-hidden">
+        
         <Hero />
         <Play />
         <About />
