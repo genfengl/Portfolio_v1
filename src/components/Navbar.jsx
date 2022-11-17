@@ -2,7 +2,7 @@
 const Navbar = () => {
     return (
         // Navbar
-        <nav className="container mx-auto py-6 px-6 sticky top-0">
+        <nav className="py-6 px-6 mt-6 sticky top-0 sm:mx-6">
             {/* Flex container */}
             <div className="flex align-middle justify-between">
                 {/* Brand */}

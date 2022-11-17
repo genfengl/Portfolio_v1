@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa'
 const Play = () => {
     return (
         <section id="play">
-            <div className='container mx-auto px-6
-            grid grid-cols-2 grid-rows-2 col-start-1 col-end-2 row-span-1 gap-3'>
+            <div className='container px-6
+            grid grid-cols-2 grid-rows-2 col-start-1 col-end-2 row-span-1 gap-3 sm:mx-6'>
                 
                 {/* View Projects Hyperlink */}
                 <a href="" className='group text-l font-bold align-middle py-6 text-word'>

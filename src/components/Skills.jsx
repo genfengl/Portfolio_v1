@@ -21,7 +21,7 @@ const Skills = () => {
                 </div>
                 {/* Software Dev Section */}
                 <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 xs:p-10 border-4">
+                    <div className="flex justify-center flex-col gap-6 p-6 border-4 xs:p-10">
                         {/* Software Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5'>
                             <div><FaStackOverflow className='text-5xl' /></div>
@@ -74,7 +74,7 @@ const Skills = () => {
                 </div>
                 {/* Frontend Dev Section */}
                 <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 xs:p-10 border-4">
+                    <div className="flex justify-center flex-col gap-6 p-6 border-4 xs:p-10">
                         {/* Frontend Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5'>
                             <div>
@@ -126,7 +126,7 @@ const Skills = () => {
                 </div>
                 {/* Backend Dev Section */}
                 <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 xs:p-10 border-4">
+                    <div className="flex justify-center flex-col gap-6 p-6 border-4 xs:p-10">
                         {/* Backend Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5'>
                             <div><FaNodeJs className='text-5xl' /></div>
