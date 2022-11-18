@@ -7,7 +7,7 @@ const Play = () => {
         <section id="play">
             <div className='container px-6
             grid grid-cols-2 grid-rows-2 col-start-1 col-end-2 row-span-1 gap-3 
-            sm:mx-6 lg:grid-cols-7 lg:grid-rows-6'>
+            sm:mx-6 lg:grid-cols-6 lg:grid-rows-6'>
 
                 {/* View Projects Hyperlink */}
                 <div className='py-6 align-middle'>
@@ -42,7 +42,7 @@ const Play = () => {
                     mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall animation-delay-5000"></div>
                 </div>
                 {/* The card show */}
-                <div className="col-start-5 col-end-6 row-start-3 row-end-4 place-items-center group hidden transition-all lg:grid">
+                <div className="col-start-4 col-end-5 row-start-4 row-end-5 place-items-center group -translate-x-4 hidden transition-all lg:grid">
                     {/* small-card 1 */}
                     <div className="w-28 aspect-[5/5] absolute rounded-xl transition-all bg-blue-600
                 group-hover:translate-x-64 group-hover:-translate-y-40 group-hover:-rotate-6">
