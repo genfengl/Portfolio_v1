@@ -24,7 +24,7 @@ const Skills = () => {
                 {/* Software Dev Section */}
                 <div>
                     <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word 
-                    xs:max-lg:p-10 xl:p-10 md:max-lg:border-b-2 md:border-r-2">
+                    xs:max-lg:p-10 xl:p-10 2xl:px-20 md:max-lg:border-b-2 md:border-r-2">
                         {/* Software Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5 
                         sm:max-md:text-4xl 2xl:text-4xl'>
@@ -81,7 +81,7 @@ const Skills = () => {
                 {/* Frontend Dev Section */}
                 <div>
                     <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word 
-                    xs:max-lg:p-10 xl:p-10 md:max-lg:border-b-2 md:border-l-2 lg:border-r-2">
+                    xs:max-lg:p-10 xl:p-10 2xl:px-20 md:max-lg:border-b-2 md:border-l-2 lg:border-r-2">
                         {/* Frontend Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl
                         2xl:text-4xl'>
@@ -137,7 +137,7 @@ const Skills = () => {
                 {/* Backend Dev Section */}
                 <div>
                     <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word 
-                    xs:max-lg:p-10 xl:p-10 md:max-lg:border-t-2 md:max-lg:border-r-2 lg:border-l-2">
+                    xs:max-lg:p-10 xl:p-10 2xl:px-20 md:max-lg:border-t-2 md:max-lg:border-r-2 lg:border-l-2">
                         {/* Backend Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl
                         2xl:text-4xl'>
