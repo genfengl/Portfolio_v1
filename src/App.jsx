@@ -5,6 +5,7 @@ import Play from './components/Play'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Fun from './components/Fun'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Fun />
       </div>
     </div>
   )
