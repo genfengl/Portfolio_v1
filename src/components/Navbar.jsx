@@ -2,7 +2,7 @@
 const Navbar = () => {
     return (
         // Navbar
-        <div className="py-6 px-6 sticky top-0 backdrop-blur-2xl z-20 sm:px-12 2xl:px-20 ">
+        <div className="py-6 px-6 sticky top-0 backdrop-blur-2xl z-20 sm:px-12 2xl:mx-auto ">
             {/* Flex container */}
             <div className="flex justify-between sticky">
                 {/* Brand */}

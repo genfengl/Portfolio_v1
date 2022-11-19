@@ -10,17 +10,17 @@ const Play = () => {
             sm:mx-6 lg:grid-cols-6 lg:grid-rows-6'>
 
                 {/* View Projects Hyperlink */}
-                <div className='py-6 align-middle'>
-                    <a href="" className='group text-l font-bold text-word'>
+                <div className='py-6 align-middle col-span-2 lg:row-start-2 lg:row-end-3'>
+                    <a href="" className='group text-l font-bold text-word lg:text-2xl '>
                         View Projects
-                        <div className='mt-0.5 bg-word h-0.5 w-14 transition-all group-hover:w-[6.6rem] group-hover:translate-x--2'></div>
+                        <div className='mt-0.5 bg-word h-0.5 w-14 transition-all group-hover:w-[9.5rem]'></div>
                     </a>
                 </div>
 
                 {/* Button links to GitHub and LinkedIn */}
-                <div className='flex flex-row gap-3 col-start-1 col-end-1 row-start-2 row-end-3'>
-                    <a href="https://github.com/genfengl" className='flex items-center text-2xl'><FaGithub /></a>
-                    <a href="https://linkedin.com/in/geraldlgf" className='flex items-center text-2xl'><FaLinkedin /></a>
+                <div className='flex flex-row gap-3 col-start-1 col-end-1 row-start-2 row-end-3 lg:row-start-4 lg:row-end-5'>
+                    <a href="https://github.com/genfengl" className='flex items-center text-2xl lg:text-4xl'><FaGithub /></a>
+                    <a href="https://linkedin.com/in/geraldlgf" className='flex items-center text-2xl lg:text-4xl'><FaLinkedin /></a>
                 </div>
 
                 {/* The animated background  */}
@@ -42,44 +42,57 @@ const Play = () => {
                     mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall animation-delay-5000"></div>
                 </div>
                 {/* The card show */}
-                <div className="col-start-4 col-end-5 row-start-4 row-end-5 place-items-center group -translate-x-4 hidden transition-all lg:grid">
+                <div className="col-start-4 col-end-5 row-start-3 row-end-4 place-items-center group -translate-x-4 translate-y-6 hidden transition-all lg:grid">
                     {/* small-card 1 */}
-                    <div className="w-28 aspect-[5/5] absolute rounded-xl transition-all bg-blue-600
+                    <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-blue-600
+                    backdrop-blur-xl bg-opacity-60
                 group-hover:translate-x-64 group-hover:-translate-y-40 group-hover:-rotate-6">
                         <FaPython className='w-full h-full rounded-xl p-3 text-yellow-300' />
                     </div>
                     {/* big-card 1 */}
-                    <div className="w-60 aspect-[5/7] absolute rounded-xl bg-blue-600 transition-all -translate-x-4 -rotate-1
+                    <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-600 transition-all -translate-x-4 -rotate-1
+                    backdrop-blur-xl bg-opacity-60
                 group-hover:-translate-x-40 group-hover:translate-y-3 group-hover:-rotate-[18deg] "></div>
                     {/* small-card 2 */}
-                    <div className="w-28 aspect-[5/5] absolute rounded-xl transition-all 
+                    <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all 
+                    backdrop-blur-xl bg-opacity-60
                 group-hover:translate-x-56 group-hover:translate-y-60 group-hover:rotate-6">
                         <SiJavascript className='w-full h-full text-yellow-300 rounded-xl' />
                     </div>
                     {/* big-card 2 */}
-                    <div className="w-60 aspect-[5/7] absolute rounded-xl bg-blue-300 transition-all rotate-3
+                    <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-300 transition-all rotate-3
+                    backdrop-blur-xl bg-opacity-60
                 group-hover:-translate-x-10 group-hover:translate-y-0 group-hover:-rotate-3"></div>
                     {/* small-card 3 */}
-                    <div className="w-28 aspect-[5/5] absolute rounded-xl transition-all bg-sky-500
+                    <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-sky-500
+                    backdrop-blur-xl bg-opacity-60
                 group-hover:-translate-x-56 group-hover:translate-y-52 group-hover:-rotate-6">
                         <FaReact className='w-full h-full p-3 rounded-xl text-word' />
                     </div>
                     {/* big-card 3 */}
-                    <div className="w-60 aspect-[5/7] absolute rounded-xl bg-slate-300 transition-all -translate-x-2 -rotate-3
+                    <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-slate-300 transition-all -translate-x-2 -rotate-3
+                    backdrop-blur-xl bg-opacity-60
                 group-hover:translate-x-24 group-hover:translate-y-1 group-hover:rotate-6"></div>
                     {/* small-card 4 */}
-                    <div className="w-28 aspect-[5/5] absolute rounded-xl transition-all bg-green-600
-                group-hover:-translate-x-48 group-hover:-translate-y-48 group-hover:rotate-[9deg]">
+                    <div className="w-28 shadow-2xl opacity-0 aspect-[5/5] absolute rounded-xl transition-all bg-green-600
+                    backdrop-blur-xl bg-opacity-60
+                group-hover:-translate-x-48 group-hover:-translate-y-48 group-hover:rotate-[9deg] group-hover:opacity-100">
                         <SiNodedotjs className='w-full h-full text-word p-3 rounded-xl' />
                     </div>
                     {/* big-card 4 */}
-                    <div className="w-60 aspect-[5/7] absolute rounded-xl bg-materialBlack transition-all translate-x-2 rotate-6
-                border-2 border-word
+                    <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-materialBlack transition-all translate-x-2 rotate-6
+                border-2 border-slate-200 backdrop-blur-xl bg-opacity-60
                 group-hover:translate-x-52 group-hover:translate-y-4 group-hover:rotate-[20deg] ">
-                        <div className="text-l text-word font-bold px-6 py-16 max-w-lg">
-                            Hello! <span className="inline-block animate-wave">👋</span>  <br />
-                            I'm Gerald, a software engineer, skilled in frontend, full stack and web development. <br />
-                            Big fan of creating sustainable, agile and performant solutions to problems.
+                        <div className="flex flex-col gap-3 text-l text-word px-6 py-10 max-w-lg">
+                            <div className='text-2xl font-bold'>Hi, I'm Gerald! <span className="inline-block animate-wave">👋</span></div>
+                            <div>
+                                A software engineer, skilled in frontend, full stack and web development. <br />
+                            </div>
+                            <div>
+                                Big fan of creating sustainable, agile and performant solutions to problems.
+                            </div>
+
+
                         </div>
                     </div>
                 </div>
