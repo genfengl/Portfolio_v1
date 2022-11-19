@@ -7,14 +7,14 @@ const Hero = () => {
         // Hero section
         <section id='hero'>
             {/* Flex Container */}
-            <div className="container flex flex-col px-6 py-16 sm:mx-6">
+            <div className="container flex flex-col px-6 py-16 sm:mx-6 lg:mx-14">
                 <div className="text-4xl font-bold flex flex-wrap max-w-3xl sm:text-6xl">
                     <RiCodeFill className='inline-flex items-center mt-1' />&nbsp;
                     <span>Transforming&nbsp;</span>
                     <span className="animate-gradientAnimation text-transparent bg-clip-text 
                     bg-gradient-to-r 
-                    from-pink-300 via-purple-300 to-indigo-400 bg-size-200">dreams</span>
-                    &nbsp;and&nbsp;
+                    from-pink-300 via-purple-300 to-indigo-400 bg-size-200">dreams&nbsp;</span>
+                    and&nbsp;
                     <span className="animate-gradientAnimation text-transparent bg-clip-text 
                     bg-gradient-to-r from-yellow-100 via-yellow-300 to-cyan-100 bg-size-200">ideas&nbsp;</span>
                     <span>into&nbsp;</span>

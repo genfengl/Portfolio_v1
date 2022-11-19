@@ -6,8 +6,8 @@ const Play = () => {
     return (
         <section id="play">
             <div className='container px-6
-            grid grid-cols-2 grid-rows-2 col-start-1 col-end-2 row-span-1 gap-3 
-            sm:mx-6 lg:grid-cols-6 lg:grid-rows-6'>
+            grid grid-cols-2 grid-rows-2 col-start-1 col-end-2 row-span-1 gap-3 transition-all 
+            sm:mx-6 lg:mx-14 lg:grid-cols-6 lg:grid-rows-6 '>
 
                 {/* View Projects Hyperlink */}
                 <div className='py-6 align-middle col-span-2 lg:row-start-2 lg:row-end-3'>
@@ -24,7 +24,7 @@ const Play = () => {
                 </div>
 
                 {/* The animated background  */}
-                <div className="col-start-2 col-end-3 row-span-2 relative w-full max-w z-10 sm:hidden">
+                <div className="col-start-2 col-end-3 row-span-2 relative w-full max-w z-10 transition-all sm:hidden">
                     <div className="absolute top-0 -right-4 w-36 h-36 bg-purple-300 rounded-full 
                     mix-blend-multiply filter blur-2xl opacity-60 animate-play "></div>
                     <div className="absolute top-2 -left-8 w-36 h-36 bg-blue-300 rounded-full 
@@ -42,7 +42,7 @@ const Play = () => {
                     mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall animation-delay-5000"></div>
                 </div>
                 {/* The card show */}
-                <div className="col-start-4 col-end-5 row-start-3 row-end-4 place-items-center group -translate-x-4 translate-y-6 hidden transition-all lg:grid">
+                <div className="col-start-4 col-end-5 row-start-3 row-end-4 place-items-center group -translate-x-9 translate-y-6 hidden transition-all lg:grid">
                     {/* small-card 1 */}
                     <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-blue-600
                     backdrop-blur-xl bg-opacity-60
