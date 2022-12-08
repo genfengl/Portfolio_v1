@@ -5,7 +5,9 @@ import Play from './components/Play'
 import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
+import Footer from './components/Footer'
 import Fun from './components/Fun'
+import Contact from './components/Contact'
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Contact />
+        {/* <Footer /> */}
         {/* <Fun /> */}
       </div>
     </div>

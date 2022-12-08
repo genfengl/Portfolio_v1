@@ -15,7 +15,7 @@ const Projects = () => {
                     {/* ChatUp! */}
 
                     <div className="w-full aspect-square relative group">
-                        <a href="https://chatup-56.netlify.app/">
+                        <a href="https://chatup-56.netlify.app/" target='_blank'>
                             <div className="bg-[#7289da] w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
@@ -31,7 +31,7 @@ const Projects = () => {
 
                     {/* NTMY */}
                     <div className="w-full aspect-square relative group">
-                        <a href="https://butcherstorereactapp.fly.dev/">
+                        <a href="https://butcherstorereactapp.fly.dev/" target='_blank'>
                             <div className="bg-[#C02433] w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
@@ -45,7 +45,7 @@ const Projects = () => {
                     </div>
                     {/* Tic-Tac-Toe */}
                     <div className="w-full aspect-square relative group">
-                        <a href="https://genfengl.github.io/TicTacToe/">
+                        <a href="https://genfengl.github.io/TicTacToe/" target='_blank'>
                             <div className="bg-[#E83B2B] w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
@@ -59,7 +59,7 @@ const Projects = () => {
                     </div>
                     {/* Tangerine's Cat Food Catalogue */}
                     <div className="w-full aspect-square relative group">
-                        <a href="https://tangerinecatfoodcatalogue.onrender.com/catfoods">
+                        <a href="https://tangerinecatfoodcatalogue.onrender.com/catfoods" target='_blank'>
                             <div className="bg-[#0D6EFD] w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
