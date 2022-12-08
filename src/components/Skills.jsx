@@ -15,22 +15,22 @@ const Skills = () => {
         <section id="skills">
             {/* Skills Title */}
             <div className="flex flex-col justify-center items-center pb-6">
-                <div className='text-center mt-0.5 bg-pink-600 h-4 w-[7.7rem] translate-y-12'></div>
+                <div className='text-center mt-0.5 bg-pink-500 h-4 w-[7.7rem] translate-y-12'></div>
                 <div className="relative text-5xl text-center font-bold"> Skills</div>
             </div>
-            <div className="container mx-auto flex flex-col px-6 py-16 gap-6 
+            <div className="container mx-auto flex flex-col px-3 py-16 gap-6 
             md:grid md:max-lg:grid-cols-2 lg:grid-cols-3 md:gap-0">
 
                 {/* Software Dev Section */}
                 <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word 
+                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-materialBlack
                     xs:max-lg:p-10 xl:p-10 2xl:px-20 md:max-lg:border-b-2 md:border-r-2">
                         {/* Software Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5 
                         sm:max-md:text-4xl 2xl:text-4xl'>
                             <div><FaStackOverflow className='text-5xl' /></div>
                             <div>
-                                <div className='mt-0.5 bg-orange-500 h-2 w-32 translate-y-8
+                                <div className='mt-0.5 bg-orange-400 h-2 w-32 translate-y-8
                                 sm:max-md:translate-y-9 sm:max-md:w-[24rem] 2xl:translate-y-9
                                 2xl:w-[9.7rem]'></div>
                                 {/* Set span position to relative so that it will display on top of the div above */}
@@ -80,7 +80,7 @@ const Skills = () => {
                 </div>
                 {/* Frontend Dev Section */}
                 <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word 
+                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-materialBlack
                     xs:max-lg:p-10 xl:p-10 2xl:px-20 md:max-lg:border-b-2 md:border-l-2 lg:border-r-2">
                         {/* Frontend Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl
@@ -89,7 +89,7 @@ const Skills = () => {
                                 <FaReact className='text-5xl' />
                             </div>
                             <div>
-                                <div className='mt-0.5 bg-blue-600 h-2 w-32 translate-y-8 
+                                <div className='mt-0.5 bg-sky-400 h-2 w-32 translate-y-8 
                                 sm:max-md:translate-y-9 sm:max-md:w-[24rem] 2xl:translate-y-9
                                 2xl:w-[9.6rem]'></div>
                                 {/* Set span position to relative so that it will display on top of the div above */}
@@ -100,7 +100,7 @@ const Skills = () => {
                         <div className='grid grid-cols-2 grid-rows-2 gap-3 text-xl mb-3'>
                             {/* React */}
                             <div className='flex items-center gap-3'>
-                                <FaReact className='text-3xl text-[#61DBFB]' />
+                                <FaReact className='text-3xl text-sky-500' />
                                 React.js
                             </div>
                             {/* HTML */}
@@ -127,7 +127,7 @@ const Skills = () => {
                             </div>
                             {/* MaterialUI */}
                             <div className='flex items-center gap-3 text-base sm:max-md:text-xl xl:text-xl'>
-                                <SiMaterialui className='text-3xl text-sky-500' />
+                                <SiMaterialui className='text-3xl text-sky-600' />
                                 MaterialUI
                             </div>
                         </div>
@@ -136,14 +136,14 @@ const Skills = () => {
                 </div>
                 {/* Backend Dev Section */}
                 <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-word 
+                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-materialBlack
                     xs:max-lg:p-10 xl:p-10 2xl:px-20 md:max-lg:border-t-2 md:max-lg:border-r-2 lg:border-l-2">
                         {/* Backend Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl
                         2xl:text-4xl'>
                             <div><FaNodeJs className='text-5xl' /></div>
                             <div className=''>
-                                <div className='mt-0.5 bg-emerald-600 h-2 w-[7.7rem] translate-y-8 
+                                <div className='mt-0.5 bg-emerald-400 h-2 w-[7.7rem] translate-y-8 
                                 sm:max-md:translate-y-9 sm:max-md:w-[23.7rem] 2xl:translate-y-9
                                 2xl:w-[9.3rem]'></div>
                                 {/* Set span position to relative so that it will display on top of the div above */}
@@ -154,7 +154,7 @@ const Skills = () => {
                         <div className='grid grid-cols-2 grid-rows-2 gap-3 text-xl mb-3'>
                             {/* Node.js */}
                             <div className='flex items-center gap-3'>
-                                <FaNodeJs className='text-3xl text-green-400' />
+                                <FaNodeJs className='text-3xl text-green-600' />
                                 Node.js
                             </div>
                             {/* Express.js */}
@@ -188,7 +188,7 @@ const Skills = () => {
                 </div>
                 {/* Learning Section */}
                 <div>
-                    <div className="flex-col gap-6 p-6 border-4 border-word h-[318px] hidden
+                    <div className="flex-col gap-6 p-6 border-4 border-materialBlack h-[318px] hidden
                     xs:p-10 md:border-t-2 md:border-l-2 md:max-lg:flex">
                         {/* Learning Title */}
                         <div className='text-3xl font-bold flex items-center gap-5 '>
@@ -201,14 +201,14 @@ const Skills = () => {
                                 />
                             </div>
                             <div>
-                                <div className='mt-0.5 bg-rose-500 h-2 w-[9.8rem] translate-y-8 
+                                <div className='mt-0.5 bg-red-400 h-2 w-[9.8rem] translate-y-8 
                                 sm:max-md:translate-y-9 sm:max-md:w-[23.7rem]'></div>
                                 <span className='relative'>Never Stop Learning</span>
                             </div>
 
                         </div>
-                        <div className='text-2xl font-bold'>
-                            Because life never stops teaching...
+                        <div className='text-2xl'>
+                            Because life never stops teaching.
                         </div>
 
 

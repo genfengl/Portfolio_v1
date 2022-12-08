@@ -13,10 +13,10 @@ const Hero = () => {
                     <span>Transforming&nbsp;</span>
                     <span className="animate-gradientAnimation text-transparent bg-clip-text 
                     bg-gradient-to-r 
-                    from-pink-300 via-purple-300 to-indigo-400 bg-size-200">dreams&nbsp;</span>
+                    from-pink-400 via-purple-400 to-indigo-500 bg-size-200">dreams&nbsp;</span>
                     and&nbsp;
                     <span className="animate-gradientAnimation text-transparent bg-clip-text 
-                    bg-gradient-to-r from-yellow-100 via-yellow-300 to-cyan-100 bg-size-200">ideas&nbsp;</span>
+                    bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-300 bg-size-200">ideas&nbsp;</span>
                     <span>into&nbsp;</span>
                     <span>real&nbsp;</span>
                     <span>world&nbsp;</span>

@@ -11,16 +11,16 @@ const Play = () => {
 
                 {/* View Projects Hyperlink */}
                 <div className='py-6 align-middle col-span-2 lg:row-start-2 lg:row-end-3'>
-                    <a href="" className='group text-l font-bold text-word lg:text-2xl '>
+                    <a href="" className='group text-l font-bold lg:text-2xl '>
                         View Projects
-                        <div className='mt-0.5 bg-word h-0.5 w-14 transition-all group-hover:w-[9.5rem]'></div>
+                        <div className='mt-0.5 bg-materialBlack h-0.5 w-14 transition-all group-hover:w-[9.5rem]'></div>
                     </a>
                 </div>
 
                 {/* Button links to GitHub and LinkedIn */}
                 <div className='flex flex-row gap-3 col-start-1 col-end-1 row-start-2 row-end-3 lg:row-start-4 lg:row-end-5'>
-                    <a href="https://github.com/genfengl" className='flex items-center text-2xl lg:text-4xl'><FaGithub /></a>
-                    <a href="https://linkedin.com/in/geraldlgf" className='flex items-center text-2xl lg:text-4xl'><FaLinkedin /></a>
+                    <a href="https://github.com/genfengl" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all lg:text-4xl'><FaGithub /></a>
+                    <a href="https://linkedin.com/in/geraldlgf" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all lg:text-4xl'><FaLinkedin /></a>
                 </div>
 
                 {/* The animated background  */}
@@ -51,31 +51,31 @@ const Play = () => {
                     </div>
                     {/* big-card 1 */}
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-600 transition-all -translate-x-4 -rotate-1
-                    backdrop-blur-xl bg-opacity-60
+                    backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
                 group-hover:-translate-x-40 group-hover:translate-y-3 group-hover:-rotate-[18deg] "></div>
                     {/* small-card 2 */}
-                    <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all 
-                    backdrop-blur-xl bg-opacity-60
+                    <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all
+                    backdrop-blur-xl bg-opacity-30
                 group-hover:translate-x-56 group-hover:translate-y-60 group-hover:rotate-6">
                         <SiJavascript className='w-full h-full text-yellow-300 rounded-xl' />
                     </div>
                     {/* big-card 2 */}
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-300 transition-all rotate-3
-                    backdrop-blur-xl bg-opacity-60
+                    backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
                 group-hover:-translate-x-10 group-hover:translate-y-0 group-hover:-rotate-3"></div>
                     {/* small-card 3 */}
-                    <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-sky-500
-                    backdrop-blur-xl bg-opacity-60
+                    <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-slate-200
+                    backdrop-blur-xl bg-opacity-60 bg-gradient-to-br from-blue-500 to-cyan-500
                 group-hover:-translate-x-56 group-hover:translate-y-52 group-hover:-rotate-6">
                         <FaReact className='w-full h-full p-3 rounded-xl text-word' />
                     </div>
                     {/* big-card 3 */}
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-slate-300 transition-all -translate-x-2 -rotate-3
-                    backdrop-blur-xl bg-opacity-60
+                    backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
                 group-hover:translate-x-24 group-hover:translate-y-1 group-hover:rotate-6"></div>
                     {/* small-card 4 */}
                     <div className="w-28 shadow-2xl opacity-0 aspect-[5/5] absolute rounded-xl transition-all bg-green-600
-                    backdrop-blur-xl bg-opacity-60
+                    backdrop-blur-xl bg-opacity-60 
                 group-hover:-translate-x-48 group-hover:-translate-y-48 group-hover:rotate-[9deg] group-hover:opacity-100">
                         <SiNodedotjs className='w-full h-full text-word p-3 rounded-xl' />
                     </div>

@@ -10,18 +10,18 @@ const Navbar = () => {
                     <img src="/logo.gif" className="h-6 w-6" />  GeraldLiu
                 </div>
                 {/* Navlinks */}
-                <div className="justify-between gap-4 items-center text-lg hidden md:flex">
+                <div className="justify-between gap-4 items-center text-lg font-bold hidden md:flex">
                     <div>
-                        <a href="#skills">Skills</a>
+                        <a href="#skills" className="hover:text-pink-600">Skills</a>
                     </div>
                     <div>
-                        <a href="#projects">Projects</a>
+                        <a href="#projects" className="hover:text-pink-600">Projects</a>
                     </div>
                     <div>
-                        Resume
+                        <a href="" className="hover:text-pink-600">Resume</a>
                     </div>
                     <div>
-                        Contact
+                        <a href="" className="hover:text-pink-600">Contact</a>
                     </div>
                 </div>
             </div>
