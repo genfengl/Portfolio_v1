@@ -18,13 +18,17 @@ const Skills = () => {
                 <div className='text-center mt-0.5 bg-pink-500 h-4 w-[7.7rem] translate-y-12'></div>
                 <div className="relative text-5xl text-center font-bold"> Skills</div>
             </div>
-            <div className="container mx-auto flex flex-col px-3 py-16 gap-6 
-            md:grid md:max-lg:grid-cols-2 lg:grid-cols-3 md:gap-0">
+            {/* Skills container */}
+            <div className="grid grid-cols-[345px] justify-center items-center gap-2 place-content-center place-items-center 
+                xs:grid-cols-[360px] md:grid-cols-[360px_360px] lg:grid-cols-[414px_414px] xl:grid-cols-[414px_414px_414px]
+                2xl:grid-cols-[498px_498px_498px]">
 
                 {/* Software Dev Section */}
-                <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-materialBlack
-                    xs:max-lg:p-10 xl:p-10 2xl:px-20 md:max-lg:border-b-2 md:border-r-2">
+                <div className='relative shadow-xl rounded-xl'>
+                    <div className='absolute w-full aspect-square bg-gradient-to-b from-cyan-500 to-blue-500 rounded-xl z-[-10]'></div>
+                    <div className="flex justify-center flex-col gap-6 p-6 rounded-xl w-full aspect-square
+                    backdrop-blur-2xl bg-opacity-40 bg-slate-300 text-word
+                    xs:max-lg:p-10 xl:p-10 2xl:px-20">
                         {/* Software Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5 
                         sm:max-md:text-4xl 2xl:text-4xl'>
@@ -79,9 +83,11 @@ const Skills = () => {
                     </div>
                 </div>
                 {/* Frontend Dev Section */}
-                <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-materialBlack
-                    xs:max-lg:p-10 xl:p-10 2xl:px-20 md:max-lg:border-b-2 md:border-l-2 lg:border-r-2">
+                <div className='relative shadow-xl rounded-xl'>
+                    <div className='absolute w-full aspect-square bg-gradient-to-b from-cyan-500 to-blue-500 rounded-xl z-[-10]'></div>
+                    <div className="flex justify-center flex-col gap-6 p-6 rounded-xl w-full aspect-square
+                    backdrop-blur-2xl bg-opacity-40 bg-slate-300 text-word
+                    xs:max-lg:p-10 xl:p-10 2xl:px-20">
                         {/* Frontend Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl
                         2xl:text-4xl'>
@@ -135,9 +141,11 @@ const Skills = () => {
 
                 </div>
                 {/* Backend Dev Section */}
-                <div>
-                    <div className="flex justify-center flex-col gap-6 p-6 border-4 border-materialBlack
-                    xs:max-lg:p-10 xl:p-10 2xl:px-20 md:max-lg:border-t-2 md:max-lg:border-r-2 lg:border-l-2">
+                <div className='relative shadow-xl rounded-xl'>
+                    <div className='absolute w-full aspect-square bg-gradient-to-b from-cyan-500 to-blue-500 rounded-xl z-[-10]'></div>
+                    <div className="flex justify-center flex-col gap-6 p-6 rounded-xl w-full aspect-square
+                    backdrop-blur-2xl bg-opacity-40 bg-slate-300 text-word
+                    xs:max-lg:p-10 xl:p-10 2xl:px-20">
                         {/* Backend Dev Title */}
                         <div className='text-3xl font-bold flex items-center gap-5 sm:max-md:text-4xl
                         2xl:text-4xl'>
@@ -187,11 +195,12 @@ const Skills = () => {
 
                 </div>
                 {/* Learning Section */}
-                <div>
-                    <div className="flex-col gap-6 p-6 border-4 border-materialBlack h-[318px] hidden
-                    xs:p-10 md:border-t-2 md:border-l-2 md:max-lg:flex">
+                <div className='relative shadow-xl rounded-xl'>
+                    <div className='absolute w-full aspect-square bg-gradient-to-b from-cyan-500 to-blue-500 rounded-xl z-[-10]'></div>
+                    <div className="flex justify-center items-center flex-col gap-6 p-[40px] rounded-xl w-full aspect-square
+                    backdrop-blur-2xl bg-opacity-40 bg-slate-300 text-word">
                         {/* Learning Title */}
-                        <div className='text-3xl font-bold flex items-center gap-5 '>
+                        <div className='text-3xl font-bold flex items-center justify-center gap-5 '>
                             <div>
                                 <Player
                                     src='https://assets1.lottiefiles.com/packages/lf20_lMdZ2NUeMB.json'

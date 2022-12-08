@@ -11,7 +11,7 @@ const Play = () => {
 
                 {/* View Projects Hyperlink */}
                 <div className='py-6 align-middle col-span-2 lg:row-start-2 lg:row-end-3'>
-                    <a href="" className='group text-l font-bold lg:text-2xl '>
+                    <a href="#projects" className='group text-l font-bold lg:text-2xl '>
                         View Projects
                         <div className='mt-0.5 bg-materialBlack h-0.5 w-14 transition-all group-hover:w-[9.5rem]'></div>
                     </a>
