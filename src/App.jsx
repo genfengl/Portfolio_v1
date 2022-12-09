@@ -8,6 +8,7 @@ import Projects from './components/Projects'
 import Footer from './components/Footer'
 import Fun from './components/Fun'
 import Contact from './components/Contact'
+import CardShow from './components/CardShow'
 
 function App() {
 

@@ -7,20 +7,21 @@ const Play = () => {
         <section id="play">
             <div className='container px-6
             grid grid-cols-2 grid-rows-2 col-start-1 col-end-2 row-span-1 gap-3 transition-all 
-            sm:mx-6 lg:mx-14 lg:grid-cols-6 lg:grid-rows-6 '>
+            sm:mx-6 md:grid-cols-3 md:grid-rows-5 lg:mx-14 lg:grid-rows-3 lg:grid-cols-5'>
+                <div>
+                    {/* View Projects Hyperlink */}
+                    <div className='py-6 align-middle col-span-2 md:row-start-2 lg:row-start-2 lg:row-end-3'>
+                        <a href="#projects" className='group text-l font-bold md:text-2xl '>
+                            View Projects
+                            <div className='mt-0.5 bg-materialBlack h-0.5 w-14 transition-all group-hover:w-[6.6rem] md:group-hover:w-[9.6rem]'></div>
+                        </a>
+                    </div>
 
-                {/* View Projects Hyperlink */}
-                <div className='py-6 align-middle col-span-2 lg:row-start-2 lg:row-end-3'>
-                    <a href="#projects" className='group text-l font-bold lg:text-2xl '>
-                        View Projects
-                        <div className='mt-0.5 bg-materialBlack h-0.5 w-14 transition-all group-hover:w-[6.6rem] lg:group-hover:w-[9.6rem]'></div>
-                    </a>
-                </div>
-
-                {/* Button links to GitHub and LinkedIn */}
-                <div className='flex flex-row gap-3 col-start-1 col-end-1 row-start-1 row-end-2 lg:row-start-4 lg:row-end-5'>
-                    <a href="https://github.com/genfengl" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all lg:text-4xl'><FaGithub /></a>
-                    <a href="https://linkedin.com/in/geraldlgf" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all lg:text-4xl'><FaLinkedin /></a>
+                    {/* Button links to GitHub and LinkedIn */}
+                    <div className='flex flex-row gap-3 col-start-1 col-end-1 row-start-1 row-end-2 lg:row-start-4 lg:row-end-5'>
+                        <a href="https://github.com/genfengl" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all md:text-4xl'><FaGithub /></a>
+                        <a href="https://linkedin.com/in/geraldlgf" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all md:text-4xl'><FaLinkedin /></a>
+                    </div>
                 </div>
 
                 {/* The animated background  */}
@@ -33,7 +34,7 @@ const Play = () => {
                     mix-blend-multiply filter blur-2xl opacity-60 animate-play animation-delay-5000"></div>
                 </div>
                 {/* The sm-md-sized animated background  */}
-                <div className="col-start-2 col-end-3 row-span-2 relative w-full max-w z-10 hidden sm:max-lg:inline-block">
+                <div className="col-start-2 col-end-3 row-span-2 relative w-full max-w z-10 hidden sm:max-md:inline-block">
                     <div className="absolute -top-1 left-20 w-48 h-48 bg-purple-300 rounded-full 
                     mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall"></div>
                     <div className="absolute top-1 -left-2 w-48 h-48 bg-blue-300 rounded-full 
@@ -42,7 +43,8 @@ const Play = () => {
                     mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall animation-delay-5000"></div>
                 </div>
                 {/* The card show */}
-                <div className="col-start-4 col-end-5 row-start-3 row-end-4 place-items-center group -translate-x-9 translate-y-6 hidden transition-all lg:grid">
+                <div className="col-start-2 col-end-3 row-start-4 row-end-5 place-items-center group -translate-x-6 translate-y-6 hidden transition-all 
+                md:grid lg:row-start-1 lg:col-start-3 lg:translate-x-6">
                     {/* small-card 1 */}
                     <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-blue-600
                     backdrop-blur-xl bg-opacity-60
