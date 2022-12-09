@@ -13,18 +13,18 @@ const Play = () => {
                 <div className='py-6 align-middle col-span-2 lg:row-start-2 lg:row-end-3'>
                     <a href="#projects" className='group text-l font-bold lg:text-2xl '>
                         View Projects
-                        <div className='mt-0.5 bg-materialBlack h-0.5 w-14 transition-all group-hover:w-[9.5rem]'></div>
+                        <div className='mt-0.5 bg-materialBlack h-0.5 w-14 transition-all group-hover:w-[6.6rem] lg:group-hover:w-[9.6rem]'></div>
                     </a>
                 </div>
 
                 {/* Button links to GitHub and LinkedIn */}
-                <div className='flex flex-row gap-3 col-start-1 col-end-1 row-start-2 row-end-3 lg:row-start-4 lg:row-end-5'>
+                <div className='flex flex-row gap-3 col-start-1 col-end-1 row-start-1 row-end-2 lg:row-start-4 lg:row-end-5'>
                     <a href="https://github.com/genfengl" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all lg:text-4xl'><FaGithub /></a>
                     <a href="https://linkedin.com/in/geraldlgf" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all lg:text-4xl'><FaLinkedin /></a>
                 </div>
 
                 {/* The animated background  */}
-                <div className="col-start-2 col-end-3 row-span-2 relative w-full max-w z-10 transition-all sm:hidden">
+                <div className="col-start-2 col-end-3 row-start-1 relative w-full max-w z-10 top-8 transition-all sm:hidden">
                     <div className="absolute top-0 -right-4 w-36 h-36 bg-purple-300 rounded-full 
                     mix-blend-multiply filter blur-2xl opacity-60 animate-play "></div>
                     <div className="absolute top-2 -left-8 w-36 h-36 bg-blue-300 rounded-full 
