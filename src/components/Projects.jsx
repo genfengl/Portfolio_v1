@@ -10,8 +10,8 @@ const Projects = () => {
                 </div>
                 {/* Projects container */}
                 <div className="grid grid-cols-[345px] justify-center items-center gap-2 place-content-center place-items-center 
-                xs:grid-cols-[360px] md:grid-cols-[360px_360px] lg:grid-cols-[414px_414px] xl:grid-cols-[414px_414px_414px]
-                2xl:grid-cols-[498px_498px_498px]">
+                xs:grid-cols-[360px] md:grid-cols-[360px_360px] lg:grid-cols-[414px_414px]
+                2xl:grid-cols-[450px_450px_450px]">
                     {/* ChatUp! */}
                     <div className="w-full aspect-square relative group">
                         <a href="https://chatup-56.netlify.app/" target='_blank'>
@@ -25,7 +25,7 @@ const Projects = () => {
 
                             <img src="/ChatUp_Screenshot.png"
                                 className="absolute w-[310px] top-[1px] left-[1px] aspect-square rounded-xl
-                        xs:w-[358px] lg:w-[412px] 2xl:w-[496px]"></img>
+                        xs:w-[358px] lg:w-[412px] 2xl:w-[448px]"></img>
                         </a>
                     </div>
 
@@ -40,7 +40,7 @@ const Projects = () => {
                             </div>
                             <img src="/NTMY_Screenshot.png"
                                 className="absolute w-[310px] top-[1px] left-[1px] aspect-square rounded-xl
-                        xs:w-[358px] lg:w-[412px] 2xl:w-[496px]"></img>
+                        xs:w-[358px] lg:w-[412px] 2xl:w-[448px]"></img>
                         </a>
                     </div>
                     {/* Tic-Tac-Toe */}
@@ -54,7 +54,7 @@ const Projects = () => {
                             </div>
                             <img src="/TicTacToe_Screenshot.png"
                                 className="absolute w-[310px] top-[1px] left-[1px] aspect-square rounded-xl
-                        xs:w-[358px] lg:w-[412px] 2xl:w-[496px]"></img>
+                        xs:w-[358px] lg:w-[412px] 2xl:w-[448px]"></img>
                         </a>
                     </div>
                     {/* Tangerine's Cat Food Catalogue */}
@@ -68,7 +68,7 @@ const Projects = () => {
                             </div>
                             <img src="/TangerinesCatFoodCatalogue_Screenshot.png"
                                 className="absolute w-[310px] top-[1px] left-[1px] aspect-square rounded-xl
-                        xs:w-[358px] lg:w-[412px] 2xl:w-[496px]"></img>
+                        xs:w-[358px] lg:w-[412px] 2xl:w-[448px]"></img>
                         </a>
                     </div>
                 </div>

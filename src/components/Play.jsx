@@ -11,16 +11,16 @@ const Play = () => {
                 <div>
                     {/* View Projects Hyperlink */}
                     <div className='py-6 align-middle col-span-2 md:row-start-2 lg:row-start-2 lg:row-end-3'>
-                        <a href="#projects" className='group text-l font-bold md:text-2xl '>
+                        <a href="#projects" className='group text-l font-bold sm:text-2xl '>
                             View Projects
-                            <div className='mt-0.5 bg-materialBlack h-0.5 w-14 transition-all group-hover:w-[6.6rem] md:group-hover:w-[9.6rem]'></div>
+                            <div className='mt-0.5 bg-materialBlack h-0.5 w-14 transition-all group-hover:w-[6.6rem] sm:group-hover:w-[9.6rem]'></div>
                         </a>
                     </div>
 
                     {/* Button links to GitHub and LinkedIn */}
                     <div className='flex flex-row gap-3 col-start-1 col-end-1 row-start-1 row-end-2 lg:row-start-4 lg:row-end-5'>
-                        <a href="https://github.com/genfengl" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all md:text-4xl'><FaGithub /></a>
-                        <a href="https://linkedin.com/in/geraldlgf" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all md:text-4xl'><FaLinkedin /></a>
+                        <a href="https://github.com/genfengl" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all sm:text-4xl'><FaGithub /></a>
+                        <a href="https://linkedin.com/in/geraldlgf" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all sm:text-4xl'><FaLinkedin /></a>
                     </div>
                 </div>
 
@@ -44,7 +44,7 @@ const Play = () => {
                 </div>
                 {/* The card show */}
                 <div className="col-start-2 col-end-3 row-start-4 row-end-5 place-items-center group -translate-x-6 translate-y-6 hidden transition-all 
-                md:grid lg:row-start-1 lg:col-start-3 lg:translate-x-6">
+                md:grid lg:row-start-1 lg:col-start-3 lg:translate-x-6 lg:translate-y-10">
                     {/* small-card 1 */}
                     <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-blue-600
                     backdrop-blur-xl bg-opacity-60

@@ -9,12 +9,20 @@ import {
     SiTypescript, SiMaterialui, SiJest, SiNextdotjs, SiCsharp
 } from 'react-icons/si';
 import { Player } from '@lottiefiles/react-lottie-player';
+import { useRef } from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
 
 const Skills = () => {
+    const { ref: backendTitleRef, inView: backendTitleIsVisible } = useInView()
+    const { ref: backendSkill1Ref, inView: backendSkill1IsVisible } = useInView()
+    
+
     return (
         <section id="skills">
             {/* Flex Container */}
-            <div className="container mx-auto flex flex-col px-3 py-16 mt-16 gap-6">
+            <div className="container mx-auto flex flex-col py-16 px-3 mt-16 gap-6">
                 {/* Skills Title */}
                 <div className="flex flex-col justify-center items-center py-6">
                     <div className='text-center mt-0.5 bg-pink-500 h-4 w-[7.7rem] translate-y-12'></div>
@@ -22,15 +30,17 @@ const Skills = () => {
                 </div>
                 {/* Skills container */}
                 <div className="grid grid-cols-[345px] justify-center items-center gap-2 place-content-center place-items-center 
-                xs:grid-cols-[360px] sm:grid-cols-[512px] md:grid-cols-[360px_360px] lg:grid-cols-[414px_414px] xl:grid-cols-[414px_414px_414px]
-                2xl:grid-cols-[498px_498px_498px]">
+                
+                xs:grid-cols-[360px] sm:grid-cols-[360px] md:grid-cols-[360px_360px] lg:grid-cols-[414px_414px]
+                2xl:grid-cols-[450px_450px_450px]">
 
                     {/* Software Dev Section */}
                     <div className='relative shadow-xl rounded-xl'>
-                        <div className='absolute w-full aspect-square bg-[url(/backgroundSoftwareDev.jpg)] bg-cover rounded-xl z-[-10]'></div>
+                        <div className='absolute w-[343px] translate-x-[1px] translate-y-[1px] aspect-square bg-[url(/backgroundSoftwareDev.jpg)] bg-cover rounded-xl z-[-10]
+                        sm:w-[358px] md:w-[358px] lg:w-[412px] 2xl:w-[448px]'></div>
                         <div className="flex justify-center flex-col gap-6 p-6 rounded-xl w-full aspect-square
                     backdrop-blur-3xl bg-opacity-60 bg-violet-300 text-word
-                    xs:p-10 sm:max-md:w-[360px] 2xl:px-20">
+                    xs:p-10 2xl:px-20">
                             {/* Software Dev Title */}
                             <div className='text-3xl font-bold flex items-center gap-5 
                          2xl:text-4xl'>
@@ -85,10 +95,11 @@ const Skills = () => {
                     </div>
                     {/* Frontend Dev Section */}
                     <div className='relative shadow-xl rounded-xl'>
-                        <div className='absolute w-full aspect-square bg-[url(/backgroundSoftwareDev.jpg)] bg-cover rounded-xl z-[-10]'></div>
+                        <div className='absolute w-[343px] translate-x-[1px] translate-y-[1px] aspect-square bg-[url(/backgroundSoftwareDev.jpg)] bg-cover rounded-xl z-[-10]
+                        sm:w-[358px] md:w-[358px] lg:w-[412px] 2xl:w-[448px]'></div>
                         <div className="flex justify-center flex-col gap-6 p-6 rounded-xl w-full aspect-square
                     backdrop-blur-3xl bg-opacity-60 bg-blue-300 text-word
-                    xs:p-10 sm:max-md:w-[360px] 2xl:px-20">
+                    xs:p-10 2xl:px-20">
                             {/* Frontend Dev Title */}
                             <div className='text-3xl font-bold flex items-center gap-5
                         2xl:text-4xl'>
@@ -142,14 +153,15 @@ const Skills = () => {
 
                     </div>
                     {/* Backend Dev Section */}
-                    <div className='relative shadow-xl rounded-xl'>
-                        <div className='absolute w-full aspect-square bg-[url(/backgroundSoftwareDev.jpg)] bg-cover rounded-xl z-[-10]'></div>
+                    <div className={`relative shadow-xl rounded-xl`}>
+                        <div className='absolute w-[343px] translate-x-[1px] translate-y-[1px] aspect-square bg-[url(/backgroundSoftwareDev.jpg)] bg-cover rounded-xl z-[-10]
+                        sm:w-[358px] md:w-[358px] lg:w-[412px] 2xl:w-[448px]'></div>
                         <div className="flex justify-center flex-col gap-6 p-6 rounded-xl w-full aspect-square
                     backdrop-blur-3xl bg-opacity-60 bg-green-300 text-word
-                    xs:p-10 sm:max-md:w-[360px] 2xl:px-20">
+                    xs:p-10 2xl:px-20">
                             {/* Backend Dev Title */}
-                            <div className='text-3xl font-bold flex items-center gap-5
-                        2xl:text-4xl'>
+                            <div ref={backendTitleRef} className={`text-3xl font-bold flex items-center gap-5
+                        2xl:text-4xl ${backendTitleIsVisible ? 'animate-skillsAnimation' : ''}`}>
                                 <div><FaNodeJs className='text-5xl' /></div>
                                 <div>
                                     <div className='mt-0.5 bg-emerald-400 h-2 w-[7.8rem] translate-y-8 
@@ -162,32 +174,38 @@ const Skills = () => {
                             {/* Backend Dev Skills */}
                             <div className='grid grid-cols-2 grid-rows-3 gap-3 text-xl mb-3'>
                                 {/* Node.js */}
-                                <div className='flex items-center gap-3'>
+                                <div className={`flex items-center gap-3
+                                ${backendTitleIsVisible ? 'animate-skills1Animation' : ''}`}>
                                     <FaNodeJs className='text-3xl text-green-600' />
                                     Node.js
                                 </div>
                                 {/* Express.js */}
-                                <div className='flex items-center gap-3 text-base sm:text-xl'>
-                                    <SiExpress className='text-3xl' />
+                                <div className={`flex items-center gap-3
+                                ${backendTitleIsVisible ? 'animate-skills1Animation' : ''}`}>
+                                    <SiExpress className='text-3xl text-materialBlack' />
                                     Express.js
                                 </div>
                                 {/* Flask */}
-                                <div className='flex items-center gap-3'>
-                                    <SiFlask className='text-3xl' />
+                                <div className={`flex items-center gap-3
+                                ${backendTitleIsVisible ? 'animate-skills2Animation' : ''}`}>
+                                    <SiFlask className='text-3xl text-materialBlack' />
                                     Flask
                                 </div>
                                 {/* PostgreSQL */}
-                                <div className='flex items-center gap-3 text-[14px] sm:text-base lg:text-xl'>
+                                <div className={`flex items-center gap-3 text-[14px] sm:text-base lg:text-xl
+                                ${backendTitleIsVisible ? 'animate-skills2Animation' : ''}`}>
                                     <SiPostgresql className='text-3xl text-blue-500' />
                                     PostgreSQL
                                 </div>
                                 {/* MongoDB */}
-                                <div className='flex items-center gap-3 text-lg sm:text-xl'>
+                                <div className={`flex items-center gap-3 text-lg sm:text-xl
+                                ${backendTitleIsVisible ? 'animate-skills3Animation' : ''}`}>
                                     <SiMongodb className='text-3xl text-green-500' />
                                     MongoDB
                                 </div>
                                 {/* Firebase */}
-                                <div className='flex items-center gap-3 text-xl'>
+                                <div className={`flex items-center gap-3 text-xl 
+                                ${backendTitleIsVisible ? 'animate-skills3Animation' : ''}`}>
                                     <SiFirebase className='text-3xl text-amber-300' />
                                     Firebase
                                 </div>
@@ -197,10 +215,11 @@ const Skills = () => {
                     </div>
                     {/* Learning Section */}
                     <div className='relative shadow-xl rounded-xl'>
-                        <div className='absolute w-full aspect-square bg-[url(/backgroundSoftwareDev.jpg)] bg-cover rounded-xl z-[-10]'></div>
+                        <div className='absolute w-[343px] translate-x-[1px] translate-y-[1px] aspect-square bg-[url(/backgroundSoftwareDev.jpg)] bg-cover rounded-xl z-[-10]
+                        sm:w-[358px] md:w-[358px] lg:w-[412px] 2xl:w-[448px]'></div>
                         <div className="flex justify-center flex-col gap-6 p-[40px] rounded-xl w-full aspect-square
                     backdrop-blur-3xl bg-opacity-60 bg-sky-300 text-word
-                    xs:max-lg:p-10 sm:max-md:w-[360px] xl:p-10 2xl:px-20">
+                    xs:p-10 2xl:px-20">
                             {/* Learning Title */}
                             <div className='text-3xl font-bold flex items-center gap-5
                         2xl:text-4xl'>
@@ -231,7 +250,7 @@ const Skills = () => {
                                 </div>
                                 {/* Next.js */}
                                 <div className='flex items-center gap-3 text-xl'>
-                                    <SiNextdotjs className='text-3xl' />
+                                    <SiNextdotjs className='text-3xl text-materialBlack' />
                                     Next.js
                                 </div>
                                 {/* C# */}

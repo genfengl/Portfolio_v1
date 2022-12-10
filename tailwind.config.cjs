@@ -65,6 +65,16 @@ module.exports = {
           '100%': {
             transform: 'translate(0px, 0px) scale(1)',
           }
+        },
+        skillsAnimation: {
+          '0%': {
+            opacity:0,
+            
+          },
+          '100%': {
+            opacity:100,
+          }
+
         }
         
       },
@@ -73,7 +83,11 @@ module.exports = {
         blink: 'blink 1s ease-in-out infinite ',
         wave: 'wave 3s ease-in-out infinite',
         play: 'play 11s ease-in-out infinite',
-        playSmall: 'playSmall 14s ease-in-out infinite'
+        playSmall: 'playSmall 14s ease-in-out infinite',
+        skillsAnimation: 'skillsAnimation 1s ease-in-out 1',
+        skills1Animation: 'skillsAnimation 2s ease-in-out 1',
+        skills2Animation: 'skillsAnimation 3s ease-in-out 1',
+        skills3Animation: 'skillsAnimation 4s ease-in-out 1',
       },
       backgroundSize: {
         'size-200': '200% 200%',
