@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="relative  w-full max-w scroll-smooth">
       <Navbar />
-      <div className="flex flex-col gap-6  overflow-x-hidden 2xl:container 2xl:mx-auto">
+      <div className="flex flex-col gap-16  overflow-x-hidden 2xl:container 2xl:mx-auto">
         <Hero />
         <Play />
         <About />
