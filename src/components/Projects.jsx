@@ -1,4 +1,11 @@
+import { useInView } from "react-intersection-observer"
+
 const Projects = () => {
+    const { ref: project1TitleRef, inView: project1TitleIsVisible } = useInView()
+    const { ref: project2TitleRef, inView: project2TitleIsVisible } = useInView()
+    const { ref: project3TitleRef, inView: project3TitleIsVisible } = useInView()
+    const { ref: project4TitleRef, inView: project4TitleIsVisible } = useInView()
+
     return (
         <section id='projects'>
             {/* Flex Container */}
@@ -19,8 +26,14 @@ const Projects = () => {
                             w-full aspect-square z-10 p-2 rounded-xl
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
-                                <div className="text-3xl font-bold">ChatUp!</div>
-                                <div className="text-xl">Instant messenger app</div>
+                                <div ref={project1TitleRef} className={`text-3xl font-bold transition-all-all duration-1000 ease-in-out
+                                ${project1TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    ChatUp!
+                                </div>
+                                <div className={`text-xl transition-all-all duration-1000 delay-500 ease-in-out
+                                ${project1TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    Instant messenger app
+                                </div>
                             </div>
 
                             <img src="/ChatUp_Screenshot.png"
@@ -35,8 +48,14 @@ const Projects = () => {
                             <div className="bg-[#C02433] backdrop-blur-3xl bg-opacity-60 shadow-xl w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
-                                <div className="text-3xl font-bold">NTMY</div>
-                                <div className="text-xl">E-commerce Store</div>
+                                <div ref={project2TitleRef} className={`text-3xl font-bold transition-all-all duration-1000 ease-in-out
+                                ${project2TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    NTMY
+                                </div>
+                                <div className={`text-xl transition-all-all duration-1000 delay-500 ease-in-out
+                                ${project2TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    E-commerce Store
+                                </div>
                             </div>
                             <img src="/NTMY_Screenshot.png"
                                 className="absolute w-[310px] top-[1px] left-[1px] aspect-square rounded-xl
@@ -49,8 +68,14 @@ const Projects = () => {
                             <div className="bg-[#E83B2B] backdrop-blur-3xl bg-opacity-60 shadow-xl w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
-                                <div className="text-3xl font-bold">Tic-Tac-Toe</div>
-                                <div className="text-xl">Webpage Game</div>
+                                <div ref={project3TitleRef} className={`text-3xl font-bold transition-all-all duration-1000 ease-in-out
+                                ${project3TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    Tic-Tac-Toe
+                                </div>
+                                <div className={`text-xl transition-all-all duration-1000 delay-500 ease-in-out
+                                ${project3TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    Webpage Game
+                                </div>
                             </div>
                             <img src="/TicTacToe_Screenshot.png"
                                 className="absolute w-[310px] top-[1px] left-[1px] aspect-square rounded-xl
@@ -63,8 +88,14 @@ const Projects = () => {
                             <div className="bg-[#0D6EFD] backdrop-blur-3xl bg-opacity-60 shadow-xl w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
-                                <div className="text-3xl font-bold text-center">Tangerine's Cat Food Catalogue</div>
-                                <div className="text-xl">CRUD App</div>
+                                <div ref={project4TitleRef} className={`text-3xl font-bold text-center transition-all-all duration-1000 ease-in-out
+                                ${project4TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    Tangerine's Cat Food Catalogue
+                                </div>
+                                <div className={`text-xl transition-all-all duration-1000 delay-500 ease-in-out
+                                ${project4TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    CRUD App
+                                </div>
                             </div>
                             <img src="/TangerinesCatFoodCatalogue_Screenshot.png"
                                 className="absolute w-[310px] top-[1px] left-[1px] aspect-square rounded-xl
