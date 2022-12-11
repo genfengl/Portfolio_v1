@@ -38,6 +38,31 @@ module.exports = {
           '60%': { transform: 'rotate(0.0deg)' },
           '100%': { transform: 'rotate(0.0deg)' },
         },
+        slowSpin: {
+          '0%': {transform: 'rotate(0deg)'},
+          '100%': {transform: 'rotate(360deg)'},
+        },
+        fastSpin: {
+          '0%': {transform: 'rotate(0deg)'},
+          '50%': {transform: 'rotate(360deg)'},
+          '100%': {transform: 'rotate(720deg)'},
+        },
+        smallBounce: {
+          '0%, 100%': {
+            transform: 'translateY(-3%)',            
+          },
+          '50%': {
+            transform: 'translateY(3%)',            
+          }
+        },
+        jsIconAnimation: {
+          '0%, 100%': {
+            transform: 'scale(100%)',            
+          },
+          '50%': {
+            transform: 'scale(105%)',            
+          }
+        },
         play: {
           '0%': {
             transform: 'translate(0px, 0px) scale(1)',
@@ -82,6 +107,10 @@ module.exports = {
         gradientAnimation: 'gradientAnimation 3s ease-in-out infinite ',
         blink: 'blink 1s ease-in-out infinite ',
         wave: 'wave 3s ease-in-out infinite',
+        slowSpin: 'slowSpin 8s linear infinite',
+        fastSpin: 'fastSpin 1s linear 10',
+        smallBounce: 'smallBounce 2s ease-in-out infinite',
+        jsIconAnimation: 'jsIconAnimation 2s ease-in-out infinite',
         play: 'play 11s ease-in-out infinite',
         playSmall: 'playSmall 14s ease-in-out infinite',
         skillsAnimation: 'skillsAnimation 1s ease-in-out 1',
@@ -89,7 +118,7 @@ module.exports = {
         skills2Animation: 'skillsAnimation 3s ease-in-out 1',
         skills3Animation: 'skillsAnimation 4s ease-in-out 1',
       },
-      
+
       transitionDelay: {
         '1500': '1500ms',
         '2000': '2000ms',

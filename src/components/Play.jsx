@@ -42,6 +42,7 @@ const Play = () => {
                     <div className="absolute -bottom-7 left-12 w-48 h-48 bg-pink-300 rounded-full 
                     mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall animation-delay-5000"></div>
                 </div>
+
                 {/* The card show */}
                 <div className="col-start-2 col-end-3 row-start-4 row-end-5 place-items-center group -translate-x-6 translate-y-6 hidden transition-all 
                 md:grid lg:row-start-1 lg:col-start-3 lg:translate-x-6 lg:translate-y-10">
@@ -49,7 +50,7 @@ const Play = () => {
                     <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-blue-600
                     backdrop-blur-xl bg-opacity-60
                 group-hover:translate-x-64 group-hover:-translate-y-40 group-hover:-rotate-6">
-                        <FaPython className='w-full h-full rounded-xl p-3 text-yellow-300' />
+                        <FaPython className='w-full h-full rounded-xl p-3 text-yellow-300 animate-wave ' />
                     </div>
                     {/* big-card 1 */}
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-600 transition-all -translate-x-4 -rotate-1
@@ -59,7 +60,7 @@ const Play = () => {
                     <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all
                     backdrop-blur-xl bg-opacity-30
                 group-hover:translate-x-56 group-hover:translate-y-60 group-hover:rotate-6">
-                        <SiJavascript className='w-full h-full text-yellow-300 rounded-xl' />
+                        <SiJavascript className='w-full h-full text-yellow-300 rounded-xl animate-jsIconAnimation' />
                     </div>
                     {/* big-card 2 */}
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-300 transition-all rotate-3
@@ -69,7 +70,7 @@ const Play = () => {
                     <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-slate-200
                     backdrop-blur-xl bg-opacity-60 bg-gradient-to-br from-blue-500 to-cyan-500
                 group-hover:-translate-x-56 group-hover:translate-y-52 group-hover:-rotate-6">
-                        <FaReact className='w-full h-full p-3 rounded-xl text-word' />
+                        <FaReact className='w-full h-full p-3 rounded-xl text-word animate-slowSpin ' />
                     </div>
                     {/* big-card 3 */}
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-slate-300 transition-all -translate-x-2 -rotate-3
@@ -79,7 +80,7 @@ const Play = () => {
                     <div className="w-28 shadow-2xl opacity-0 aspect-[5/5] absolute rounded-xl transition-all bg-green-600
                     backdrop-blur-xl bg-opacity-60 
                 group-hover:-translate-x-48 group-hover:-translate-y-48 group-hover:rotate-[9deg] group-hover:opacity-100">
-                        <SiNodedotjs className='w-full h-full text-word p-3 rounded-xl' />
+                        <SiNodedotjs className='w-full h-full text-word p-3 rounded-xl animate-smallBounce' />
                     </div>
                     {/* big-card 4 */}
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-materialBlack transition-all translate-x-2 rotate-6
@@ -93,23 +94,9 @@ const Play = () => {
                             <div>
                                 Big fan of creating sustainable, agile and performant solutions to problems.
                             </div>
-
-
                         </div>
                     </div>
                 </div>
-                {/* The lg+-sized animated background  */}
-                {/* <div className="col-start-2 col-end-3 row-span-2 relative w-full max-w z-10 hidden lg:inline-block">
-                    <div className="absolute -top-1 left-20 w-60 h-60 bg-purple-300 rounded-full 
-                    mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall
-                    "></div>
-                    <div className="absolute top-1 -left-2 w-60 h-60 bg-blue-300 rounded-full 
-                    mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall animation-delay-3000
-                    "></div>
-                    <div className="absolute -bottom-7 left-12 w-60 h-60 bg-pink-300 rounded-full 
-                    mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall animation-delay-5000
-                    "></div>
-                </div> */}
             </div>
         </section>
     )
