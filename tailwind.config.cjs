@@ -89,9 +89,16 @@ module.exports = {
         skills2Animation: 'skillsAnimation 3s ease-in-out 1',
         skills3Animation: 'skillsAnimation 4s ease-in-out 1',
       },
+      
+      transitionDelay: {
+        '1500': '1500ms',
+        '2000': '2000ms',
+      },
+
       backgroundSize: {
         'size-200': '200% 200%',
       },
+
       backgroundPosition: {
         'pos-0': '0% 0%',
         'pos-100': '100% 100%',
