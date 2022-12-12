@@ -7,13 +7,13 @@ const Play = () => {
         <section id="play">
             <div className='container px-6
             grid grid-cols-2 grid-rows-2 col-start-1 col-end-2 row-span-1 gap-3 transition-all 
-            sm:mx-6 md:grid-cols-3 md:grid-rows-5 lg:mx-14 lg:grid-rows-3 lg:grid-cols-5'>
+            sm:mx-6 md:grid-cols-3 md:grid-rows-5 lg:mx-14 lg:grid-rows-3 lg:grid-cols-5 dark:text-word'>
                 <div>
                     {/* View Projects Hyperlink */}
                     <div className='py-6 align-middle col-span-2 md:row-start-2 lg:row-start-2 lg:row-end-3'>
                         <a href="#projects" className='group text-l font-bold sm:text-2xl '>
                             View Projects
-                            <div className='mt-0.5 bg-materialBlack h-0.5 w-14 transition-all group-hover:w-[6.6rem] sm:group-hover:w-[9.6rem]'></div>
+                            <div className='mt-0.5 bg-materialBlack h-0.5 w-14 transition-all group-hover:w-[6.6rem] sm:group-hover:w-[9.6rem] dark:bg-word'></div>
                         </a>
                     </div>
 

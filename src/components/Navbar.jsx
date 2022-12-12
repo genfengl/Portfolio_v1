@@ -28,8 +28,11 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
                     GeraldLiu
                     <button type='button'
                         onClick={handleThemeSwitch}
+                        className="transition-all"
                     >
-                        {theme === 'light' ? <MdLightMode /> : <MdDarkMode className="text-word"/>}
+                        <div className="transition-all">
+                            {theme === 'light' ? <MdLightMode /> : <MdDarkMode className="text-word" />}
+                        </div>
                     </button>
                 </div>
 

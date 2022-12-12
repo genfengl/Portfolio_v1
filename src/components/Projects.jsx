@@ -9,7 +9,7 @@ const Projects = () => {
     return (
         <section id='projects'>
             {/* Flex Container */}
-            <div className="container mx-auto flex flex-col px-3 py-16 gap-6">
+            <div className="container mx-auto flex flex-col px-3 py-16 gap-6 dark:text-word">
                 {/* Projects Title */}
                 <div className="flex flex-col justify-center items-center pb-6">
                     <div className='text-center mt-0.5 bg-violet-500 h-4 w-48 translate-y-12'></div>
@@ -22,7 +22,7 @@ const Projects = () => {
                     {/* ChatUp! */}
                     <div className="w-full aspect-square relative group">
                         <a href="https://chatup-56.netlify.app/" target='_blank'>
-                            <div className="bg-[#7289da] text-word backdrop-blur-3xl bg-opacity-60 shadow-xl 
+                            <div className="bg-[#7289da] text-word backdrop-blur-3xl bg-opacity-60 shadow-xl dark:shadow-slate-700
                             w-full aspect-square z-10 p-2 rounded-xl
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
@@ -45,7 +45,8 @@ const Projects = () => {
                     {/* NTMY */}
                     <div className="w-full aspect-square relative group">
                         <a href="https://butcherstorereactapp.fly.dev/" target='_blank'>
-                            <div className="bg-[#C02433] backdrop-blur-3xl bg-opacity-60 shadow-xl w-full aspect-square z-10 p-2 rounded-xl text-word 
+                            <div className="bg-[#C02433] backdrop-blur-3xl bg-opacity-60 shadow-xl dark:shadow-slate-700
+                            w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
                                 <div ref={project2TitleRef} className={`text-3xl font-bold transition-all-all duration-1000 ease-in-out
@@ -65,7 +66,8 @@ const Projects = () => {
                     {/* Tic-Tac-Toe */}
                     <div className="w-full aspect-square relative group">
                         <a href="https://genfengl.github.io/TicTacToe/" target='_blank'>
-                            <div className="bg-[#E83B2B] backdrop-blur-3xl bg-opacity-60 shadow-xl w-full aspect-square z-10 p-2 rounded-xl text-word 
+                            <div className="bg-[#E83B2B] backdrop-blur-3xl bg-opacity-60 shadow-xl dark:shadow-slate-700
+                            w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
                                 <div ref={project3TitleRef} className={`text-3xl font-bold transition-all-all duration-1000 ease-in-out
@@ -85,7 +87,8 @@ const Projects = () => {
                     {/* Tangerine's Cat Food Catalogue */}
                     <div className="w-full aspect-square relative group">
                         <a href="https://tangerinecatfoodcatalogue.onrender.com/catfoods" target='_blank'>
-                            <div className="bg-[#0D6EFD] backdrop-blur-3xl bg-opacity-60 shadow-xl w-full aspect-square z-10 p-2 rounded-xl text-word 
+                            <div className="bg-[#0D6EFD] backdrop-blur-3xl bg-opacity-60 shadow-xl dark:shadow-slate-700
+                            w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
                         group-hover:opacity-0">
                                 <div ref={project4TitleRef} className={`text-3xl font-bold text-center transition-all-all duration-1000 ease-in-out
