@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { FaLightbulb, FaRegLightbulb } from "react-icons/fa"
 import { MdDarkMode, MdLightMode } from "react-icons/md"
 
 const Navbar = ({ theme, handleThemeSwitch }) => {
@@ -31,7 +32,7 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
                         className="transition-all"
                     >
                         <div className="transition-all">
-                            {theme === 'light' ? <MdLightMode /> : <MdDarkMode className="text-word" />}
+                            {theme === 'light' ? <FaRegLightbulb/> : <FaRegLightbulb />}
                         </div>
                     </button>
                 </div>
