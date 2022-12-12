@@ -1,11 +1,12 @@
 import { useState } from "react"
+import { MdDarkMode, MdLightMode } from "react-icons/md"
 
-const Navbar = () => {
+const Navbar = ({ theme, handleThemeSwitch }) => {
     const [showMobileNav, setShowMobileNav] = useState(false)
 
     return (
         // Navbar
-        <div className={`py-6 px-6 sticky top-0 backdrop-blur-2xl z-20 sm:px-12 lg:px-20 ${showMobileNav ? 'h-screen overflow-hidden' : ''}`}>
+        <div className={`py-6 px-6 sticky top-0 backdrop-blur-2xl z-20 sm:px-12 lg:px-20 ${showMobileNav ? 'h-screen overflow-hidden' : ''} dark:text-word`}>
             {/* Flex container */}
             <div className="grid grid-cols-2 sticky">
                 {/* Brand */}
@@ -13,17 +14,23 @@ const Navbar = () => {
                 <div className="col-start-2 row-start-1 flex justify-end items-center mb-1">
                     <button className="relative md:hidden" onClick={() => setShowMobileNav(!showMobileNav)}>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? 'opacity-0' : '-translate-y-2 delay-500'}
-                        transition-all ease-in-out`}></div>
+                        transition-all ease-in-out dark:bg-word`}></div>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? 'rotate-45 delay-500' : ''}
-                        transition-all ease-in-out`}></div>
+                        transition-all ease-in-out dark:bg-word`}></div>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? '-rotate-45 delay-500' : ''}
-                        transition-all ease-in-out`}></div>
+                        transition-all ease-in-out dark:bg-word`}></div>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? 'opacity-0' : 'translate-y-2 delay-500'}
-                        transition-all ease-in-out`}></div>
+                        transition-all ease-in-out dark:bg-word`}></div>
                     </button>
                 </div>
-                <div className="font-bold text-2xl flex gap-2 items-center">
-                    <img src="/logo.gif" className="h-6 w-6" />  GeraldLiu
+                <div className="font-bold text-2xl flex gap-2 items-center transition-all">
+                    <img src="/logo.gif" className="h-6 w-6" />
+                    GeraldLiu
+                    <button type='button'
+                        onClick={handleThemeSwitch}
+                    >
+                        {theme === 'light' ? <MdLightMode /> : <MdDarkMode className="text-word"/>}
+                    </button>
                 </div>
 
                 {/* Mobile Nav */}
@@ -61,16 +68,16 @@ const Navbar = () => {
                 {/* Navlinks */}
                 <div className="col-start-2 row-start-1 justify-end items-center gap-5 font-bold hidden md:flex">
                     <div>
-                        <a href="#skills" className="hover:text-blue-600">Skills</a>
+                        <a href="#skills" className="hover:text-pink-500">Skills</a>
                     </div>
                     <div>
-                        <a href="#projects" className="hover:text-blue-600">Projects</a>
+                        <a href="#projects" className="hover:text-violet-500">Projects</a>
                     </div>
                     <div>
-                        <a href="" className="hover:text-blue-600">Resume</a>
+                        <a href="" className="hover:text-yellow-500">Resume</a>
                     </div>
                     <div>
-                        <a href="#contact" className="hover:text-blue-600">Contact</a>
+                        <a href="#contact" className="hover:text-blue-500">Contact</a>
                     </div>
                 </div>
 
