@@ -13,28 +13,29 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
                 {/* Brand */}
                 {/* Hamburger Icon */}
                 <div className="col-start-2 row-start-1 flex justify-end items-center mb-1">
+                    <button type='button'
+                        onClick={handleThemeSwitch}
+                        className="transition-all -translate-x-12 md:hidden"
+                    >
+                        <div className="align-middle transition-all text-xl translate-y-[2px] scale-110 hover:scale-125">
+                            <FaRegLightbulb />
+                        </div>
+                    </button>
                     <button className="relative md:hidden" onClick={() => setShowMobileNav(!showMobileNav)}>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? 'opacity-0' : '-translate-y-2 delay-500'}
-                        transition-all ease-in-out dark:bg-word`}></div>
+                        transition-hamburger ease-in-out dark:bg-word`}></div>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? 'rotate-45 delay-500' : ''}
-                        transition-all ease-in-out dark:bg-word`}></div>
+                        transition-hamburger ease-in-out dark:bg-word`}></div>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? '-rotate-45 delay-500' : ''}
-                        transition-all ease-in-out dark:bg-word`}></div>
+                        transition-hamburger ease-in-out dark:bg-word`}></div>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? 'opacity-0' : 'translate-y-2 delay-500'}
-                        transition-all ease-in-out dark:bg-word`}></div>
+                        transition-hamburger ease-in-out dark:bg-word`}></div>
                     </button>
                 </div>
                 <div className="font-bold text-2xl flex gap-2 items-center transition-all">
-                    <img src="/logo.gif" className="h-6 w-6" />
+                    {theme === 'dark' ? <img src="/logoDark.gif" className="h-6 w-6" /> : <img src="/logoLight.gif" className="h-6 w-6" />}
                     GeraldLiu
-                    <button type='button'
-                        onClick={handleThemeSwitch}
-                        className="transition-all"
-                    >
-                        <div className="transition-all">
-                            {theme === 'light' ? <FaRegLightbulb/> : <FaRegLightbulb />}
-                        </div>
-                    </button>
+
                 </div>
 
                 {/* Mobile Nav */}
@@ -71,18 +72,28 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
                 </div>
                 {/* Navlinks */}
                 <div className="col-start-2 row-start-1 justify-end items-center gap-5 font-bold hidden md:flex">
+                    <button type='button'
+                        onClick={handleThemeSwitch}
+                        className="transition-all"
+                    >
+                        <div className="transition-all text-xl hover:scale-125">
+                            <FaRegLightbulb />
+
+                        </div>
+                    </button>
                     <div>
-                        <a href="#skills" className="hover:text-pink-500">Skills</a>
+                        <a href="#skills" className="hover:text-pink-500 ">Skills</a>
                     </div>
                     <div>
-                        <a href="#projects" className="hover:text-violet-500">Projects</a>
+                        <a href="#projects" className="hover:text-violet-500 dark:hover:text-purple-400">Projects</a>
                     </div>
                     <div>
-                        <a href="" className="hover:text-yellow-500">Resume</a>
+                        <a href="" className="hover:text-yellow-500 dark:hover:text-yellow-300">Resume</a>
                     </div>
                     <div>
-                        <a href="#contact" className="hover:text-blue-500">Contact</a>
+                        <a href="#contact" className="hover:text-blue-500 dark:hover:text-blue-400">Contact</a>
                     </div>
+
                 </div>
 
             </div>

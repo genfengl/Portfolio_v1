@@ -20,11 +20,11 @@ const Projects = () => {
                 xs:grid-cols-[360px] md:grid-cols-[360px_360px] lg:grid-cols-[414px_414px]
                 2xl:grid-cols-[450px_450px_450px]">
                     {/* ChatUp! */}
-                    <div className="w-full aspect-square relative group">
+                    <div className="w-full aspect-square relative shadow-xl rounded-xl group">
                         <a href="https://chatup-56.netlify.app/" target='_blank'>
-                            <div className="bg-[#7289da] text-word backdrop-blur-3xl bg-opacity-60 shadow-xl dark:shadow-slate-700
+                            <div className="bg-[#7289da] text-word backdrop-blur-3xl bg-opacity-60 
                             w-full aspect-square z-10 p-2 rounded-xl
-                        flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
+                        flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-500
                         group-hover:opacity-0">
                                 <div ref={project1TitleRef} className={`text-3xl font-bold transition-all-all duration-1000 ease-in-out
                                 ${project1TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
@@ -43,11 +43,11 @@ const Projects = () => {
                     </div>
 
                     {/* NTMY */}
-                    <div className="w-full aspect-square relative group">
+                    <div className="w-full aspect-square relative shadow-xl rounded-xl group">
                         <a href="https://butcherstorereactapp.fly.dev/" target='_blank'>
-                            <div className="bg-[#C02433] backdrop-blur-3xl bg-opacity-60 shadow-xl dark:shadow-slate-700
+                            <div className="bg-[#C02433] backdrop-blur-3xl bg-opacity-60 
                             w-full aspect-square z-10 p-2 rounded-xl text-word 
-                        flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
+                        flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-500
                         group-hover:opacity-0">
                                 <div ref={project2TitleRef} className={`text-3xl font-bold transition-all-all duration-1000 ease-in-out
                                 ${project2TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
@@ -64,13 +64,13 @@ const Projects = () => {
                         </a>
                     </div>
                     {/* Tic-Tac-Toe */}
-                    <div className="w-full aspect-square relative group">
+                    <div className="w-full aspect-square relative shadow-xl rounded-xl group">
                         <a href="https://genfengl.github.io/TicTacToe/" target='_blank'>
-                            <div className="bg-[#E83B2B] backdrop-blur-3xl bg-opacity-60 shadow-xl dark:shadow-slate-700
+                            <div className="bg-[#E83B2B] backdrop-blur-3xl bg-opacity-60 
                             w-full aspect-square z-10 p-2 rounded-xl text-word 
-                        flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
+                        flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-500
                         group-hover:opacity-0">
-                                <div ref={project3TitleRef} className={`text-3xl font-bold transition-all-all duration-1000 ease-in-out
+                                <div ref={project3TitleRef} className={`text-3xl font-bold transition-all duration-1000 ease-in-out
                                 ${project3TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
                                     Tic-Tac-Toe
                                 </div>
@@ -85,11 +85,11 @@ const Projects = () => {
                         </a>
                     </div>
                     {/* Tangerine's Cat Food Catalogue */}
-                    <div className="w-full aspect-square relative group">
+                    <div className="w-full aspect-square relative shadow-xl rounded-xl group">
                         <a href="https://tangerinecatfoodcatalogue.onrender.com/catfoods" target='_blank'>
-                            <div className="bg-[#0D6EFD] backdrop-blur-3xl bg-opacity-60 shadow-xl dark:shadow-slate-700
+                            <div className="bg-[#0D6EFD] backdrop-blur-3xl bg-opacity-60 
                             w-full aspect-square z-10 p-2 rounded-xl text-word 
-                        flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-300
+                        flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-500
                         group-hover:opacity-0">
                                 <div ref={project4TitleRef} className={`text-3xl font-bold text-center transition-all-all duration-1000 ease-in-out
                                 ${project4TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>

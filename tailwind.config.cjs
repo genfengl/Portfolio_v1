@@ -10,6 +10,9 @@ module.exports = {
       screens: {
         'xs': '390px'
       },
+      transitionProperty: {
+        'hamburger': 'transform, opacity'
+      },
 
       colors: {
         // primary: '#1e293b',
@@ -121,6 +124,10 @@ module.exports = {
       },
 
       transitionDelay: {
+        '300': '300ms',
+        '600': '600ms',
+        '900': '900ms',
+        '1200': '1200ms',
         '1500': '1500ms',
         '2000': '2000ms',
       },
