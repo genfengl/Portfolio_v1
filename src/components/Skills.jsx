@@ -31,7 +31,6 @@ const Skills = () => {
                 </div>
                 {/* Skills container */}
                 <div className="grid grid-cols-[345px] justify-center items-center gap-2 place-content-center place-items-center 
-                
                 xs:grid-cols-[360px] sm:grid-cols-[360px] md:grid-cols-[360px_360px] lg:grid-cols-[414px_414px]
                 2xl:grid-cols-[450px_450px_450px]">
 
@@ -41,7 +40,7 @@ const Skills = () => {
                         sm:w-[358px] md:w-[358px] lg:w-[412px] 2xl:w-[448px]'></div>
                         <div className="flex justify-center flex-col gap-6 p-6 rounded-xl w-full aspect-square z-10
                     backdrop-blur-3xl bg-opacity-60 bg-violet-300 text-word
-                    xs:p-10 2xl:px-20">
+                    xs:p-10 2xl:px-16">
                             {/* Software Dev Title */}
                             <div ref={softwareDevTitleRef} className={`text-3xl font-bold flex items-center gap-5
                             transition-all duration-1000 ease-in-out
@@ -107,7 +106,7 @@ const Skills = () => {
                         sm:w-[358px] md:w-[358px] lg:w-[412px] 2xl:w-[448px]'></div>
                         <div className="flex justify-center flex-col gap-6 p-6 rounded-xl w-full aspect-square z-10
                     backdrop-blur-3xl bg-opacity-60 bg-blue-300 text-word
-                    xs:p-10 2xl:px-20">
+                    xs:p-10 2xl:px-16">
                             {/* Frontend Dev Title */}
                             <div ref={frontendTitleRef} className={`text-3xl font-bold flex items-center gap-5
                             transition-all duration-1000 ease-in-out
@@ -173,7 +172,7 @@ const Skills = () => {
                         sm:w-[358px] md:w-[358px] lg:w-[412px] 2xl:w-[448px]'></div>
                         <div className="flex justify-center flex-col gap-6 p-6 rounded-xl w-full aspect-square z-10
                     backdrop-blur-3xl bg-opacity-60 bg-green-300 text-word 
-                    xs:p-10 2xl:px-20">
+                    xs:p-10 2xl:px-16">
                             {/* Backend Dev Title */}
                             <div ref={backendTitleRef} className={`text-3xl font-bold flex items-center gap-5
                             transition-all duration-1000 ease-in-out
@@ -237,7 +236,7 @@ const Skills = () => {
                         sm:w-[358px] md:w-[358px] lg:w-[412px] 2xl:w-[448px]'></div>
                         <div className="flex justify-center flex-col gap-6 p-[40px] rounded-xl w-full aspect-square z-10
                     backdrop-blur-3xl bg-opacity-60 bg-sky-300 text-word 
-                    xs:p-10 2xl:px-20">
+                    xs:p-10 2xl:px-16">
                             {/* Learning Title */}
                             <div ref={learningTitleRef} className={`text-3xl font-bold flex items-center gap-5
                             transition-all duration-1000 ease-in-out

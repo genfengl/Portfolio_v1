@@ -88,7 +88,7 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
                         <a href="#projects" className="hover:text-violet-500 dark:hover:text-purple-400">Projects</a>
                     </div>
                     <div>
-                        <a href="" className="hover:text-yellow-500 dark:hover:text-yellow-300">Resume</a>
+                        <a href="/Resume.pdf" download="Gerald Liu Resume" className="hover:text-yellow-500 dark:hover:text-yellow-300">Resume</a>
                     </div>
                     <div>
                         <a href="#contact" className="hover:text-blue-500 dark:hover:text-blue-400">Contact</a>
