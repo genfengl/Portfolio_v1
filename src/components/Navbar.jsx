@@ -2,9 +2,7 @@ import { useState } from "react"
 import { FaBarcode, FaLightbulb, FaRegLightbulb } from "react-icons/fa"
 import { MdDarkMode, MdLightMode } from "react-icons/md"
 
-const Navbar = ({ theme, handleThemeSwitch }) => {
-    const [showMobileNav, setShowMobileNav] = useState(false)
-
+const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }) => {
     return (
         // Navbar
         <div className={`py-6 px-6 sticky top-0 backdrop-blur-2xl z-20 sm:px-12 lg:px-20 ${showMobileNav ? 'h-screen overflow-hidden' : ''} dark:text-word dark:bg-materialBlack`}>
@@ -22,7 +20,7 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
                         </div>                    
                     </button>
                     
-                    <button className="relative md:hidden" onClick={() => setShowMobileNav(!showMobileNav)}>
+                    <button className="relative md:hidden" onClick={() => changeShowMobileNav(!showMobileNav)}>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? 'opacity-0' : '-translate-y-2 delay-500'}
                         transition-hamburger ease-in-out dark:bg-word`}></div>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? 'rotate-45 delay-500' : ''}
@@ -50,26 +48,26 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
                     <div className={`absolute flex flex-col gap-5 items-start self-end py-6 font-bold h-screen w-screen
                      top-12
                     transition-all  ${showMobileNav ? 'left-0 duration-1000' : '-left-[120%] opacity-0'}`}>
-                        <button onClick={() => setShowMobileNav(!showMobileNav)}>
+                        <button onClick={() => changeShowMobileNav(!showMobileNav)}>
                             <div className="flex items-center gap-3">
                                 <div className="w-2 h-2 bg-pink-500"></div>
                                 <a href="#skills" className="hover:text-pink-500">Skills</a>
                             </div>
                         </button>
-                        <button onClick={() => setShowMobileNav(!showMobileNav)}>
+                        <button onClick={() => changeShowMobileNav(!showMobileNav)}>
                             <div className="flex items-center gap-3">
                                 <div className="w-2 h-2 bg-violet-500"></div>
                                 <a href="#projects" className="hover:text-violet-500">Projects</a>
                             </div>
                         </button>
-                        <button onClick={() => setShowMobileNav(!showMobileNav)}>
+                        <button onClick={() => changeShowMobileNav(!showMobileNav)}>
                             <div className="flex items-center gap-3">
                                 <div className="w-2 h-2 bg-yellow-500"></div>
                                 <a href="" className="hover:text-yellow-500">Resume</a>
                             </div>
                         </button>
 
-                        <button onClick={() => setShowMobileNav(!showMobileNav)}>
+                        <button onClick={() => changeShowMobileNav(!showMobileNav)}>
                             <div className="flex items-center gap-3">
                                 <div className="w-2 h-2 bg-blue-500"></div>
                                 <a href="#contact" className="hover:text-blue-500">Contact</a>
