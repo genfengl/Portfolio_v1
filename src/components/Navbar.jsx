@@ -46,10 +46,10 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
                 </div>
 
                 {/* Mobile Nav */}
-                <div className="md:opacity-0 -z-10">
+                <div className="md:opacity-0">
                     <div className={`absolute flex flex-col gap-5 items-start self-end py-6 font-bold h-screen w-screen backdrop-blur-2xl
-                     top-9
-                    transition-all  ${showMobileNav ? '-left-0 duration-1000' : '-left-[120%] opacity-0'}`}>
+                     top-10
+                    transition-all  ${showMobileNav ? 'left-0 duration-1000' : '-left-[120%] opacity-0'}`}>
                         <button onClick={() => setShowMobileNav(!showMobileNav)}>
                             <div className="flex items-center gap-3">
                                 <div className="w-2 h-2 bg-pink-500"></div>
