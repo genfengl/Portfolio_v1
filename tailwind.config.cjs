@@ -33,8 +33,8 @@ module.exports = {
           '50%': { backgroundPosition: '100% 100%' },
         },
         blink: {
-          '0, 25%, 75%, 100%': { opacity: '0' },
-          '50%': { opacity: '1' },
+          '0, 25%, 75%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
         },
         wave: {
           '0%': { transform: 'rotate(0.0deg)' },
@@ -113,7 +113,7 @@ module.exports = {
       animation: {
         slide: 'slide 6s linear infinite',
         gradientAnimation: 'gradientAnimation 3s ease-in-out infinite ',
-        blink: 'blink 1s ease-in-out infinite ',
+        blink: 'blink 1s ease-in-out infinite',
         wave: 'wave 3s ease-in-out infinite',
         slowSpin: 'slowSpin 8s linear infinite',
         fastSpin: 'fastSpin 1s linear 10',

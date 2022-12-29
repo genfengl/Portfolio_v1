@@ -43,9 +43,9 @@ const Home = () => {
         }
     }
     return (
-        <div className="relative w-full max-w scroll-smooth dark:bg-materialBlack">
+        <div className={`relative w-full max-w scroll-smooth ${showMobileNav ? '' : ''}   dark:bg-materialBlack`}>
             <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} changeShowMobileNav={changeShowMobileNav} showMobileNav={showMobileNav} />
-            <div className="flex flex-col gap-16  overflow-x-hidden 2xl:container 2xl:mx-auto">
+            <div className={`flex flex-col gap-16 ${showMobileNav ? '' : ''} overflow-x-hidden 2xl:container 2xl:mx-auto`}>
                 <Hero />
                 <Play />
                 <About />

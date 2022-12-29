@@ -21,7 +21,7 @@ const Hero = () => {
                     <span>real&nbsp;</span>
                     <span>world&nbsp;</span>
                     <span>applications&nbsp;</span>  
-                    <span className='inline-flex animate-blink opacity-0'>_</span>
+                    <span className='inline-flex animate-blink'>_</span>
                     &nbsp;<RiCodeSSlashFill className='inline-block items-center my-1' />
                 </div>
             </div>

@@ -1,8 +1,12 @@
 import { FaGithub, FaLinkedin, FaReact, FaPython } from 'react-icons/fa'
 import { SiJavascript, SiNodedotjs } from 'react-icons/si'
+import { Player } from '@lottiefiles/react-lottie-player'
+import { useState } from 'react'
+
 
 
 const Play = () => {
+    const [bigCard3Words, setBigCard3Words] = useState('')
     return (
         <section id="play">
             <div className='container px-6
@@ -80,10 +84,22 @@ const Play = () => {
                 group-hover:-translate-x-56 group-hover:translate-y-52 group-hover:-rotate-6">
                         <FaReact className='w-full h-full p-3 rounded-xl text-word animate-slowSpin ' />
                     </div>
-                    {/* big-card 3 */}
+                    {/* big-card 3: travelling */}
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-slate-300 transition-all -translate-x-2 -rotate-3
                     backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
-                group-hover:translate-x-24 group-hover:translate-y-1 group-hover:rotate-6"></div>
+                group-hover:translate-x-24 group-hover:translate-y-1 group-hover:rotate-6">
+                        <div className='flex flex-col p-6 gap-3'>
+
+
+                            <div className="transition-all after:content-['|'] after:animate-blink">
+                                {bigCard3Words}
+                            </div>
+                            <Player src='https://assets9.lottiefiles.com/datafiles/AtGF4p7zA8LpP2R/data.json'
+                                loop
+                                autoplay
+                                 />
+                        </div>
+                    </div>
                     {/* small-card 4 */}
                     <div className="w-28 shadow-2xl opacity-0 aspect-[5/5] absolute rounded-xl transition-all bg-green-600
                     backdrop-blur-xl bg-opacity-60 

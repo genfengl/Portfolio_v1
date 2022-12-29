@@ -235,7 +235,7 @@ const Skills = () => {
                         <div className='absolute w-[343px] translate-x-[1px] translate-y-[1px] aspect-square bg-[url(/backgroundSoftwareDev.jpg)] bg-cover rounded-xl z-0
                         sm:w-[358px] md:w-[358px] lg:w-[412px] 2xl:w-[448px]'></div>
                         <div className="flex justify-center flex-col gap-6 p-[40px] rounded-xl w-full aspect-square z-10
-                    backdrop-blur-3xl bg-opacity-60 bg-sky-300 text-word 
+                    backdrop-blur-3xl bg-opacity-60 bg-yellow-300 text-word 
                     xs:p-10 2xl:px-16">
                             {/* Learning Title */}
                             <div ref={learningTitleRef} className={`text-3xl font-bold flex items-center gap-5
@@ -243,7 +243,7 @@ const Skills = () => {
                         2xl:text-4xl ${learningTitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
                                 <div><FaBookOpen className='text-5xl' /></div>
                                 <div>
-                                    <div className='mt-0.5 bg-yellow-400 h-2 w-[8.3rem] translate-y-8 
+                                    <div className='mt-0.5 bg-orange-300 h-2 w-[8.3rem] translate-y-8 
                                  2xl:translate-y-9
                                 2xl:w-[9.3rem]'></div>
                                     {/* Set span position to relative so that it will display on top of the div above */}
