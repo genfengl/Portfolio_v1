@@ -7,7 +7,7 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
 
     return (
         // Navbar
-        <div className={`py-6 px-6 sticky top-0 backdrop-blur-2xl bg-opacity-60 z-20 sm:px-12 lg:px-20 ${showMobileNav ? 'h-screen overflow-hidden' : ''} dark:text-word dark:bg-materialBlack`}>
+        <div className={`py-6 px-6 sticky top-0 backdrop-blur-2xl z-20 sm:px-12 lg:px-20 ${showMobileNav ? 'h-screen overflow-hidden' : ''} dark:text-word dark:bg-materialBlack`}>
             {/* Flex container */}
             <div className="grid grid-cols-2 sticky">
                 {/* Brand */}
