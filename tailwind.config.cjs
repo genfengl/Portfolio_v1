@@ -22,8 +22,12 @@ module.exports = {
         dream2: '#65C7F7',
         dream3: '#0052D4',
       },
-      
+
       keyframes: {
+        slide: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': {transform: 'translateX(-50%)'}
+        },
         gradientAnimation: {
           '0, 100%': { backgroundPosition: '0% 0%' },
           '50%': { backgroundPosition: '100% 100%' },
@@ -43,28 +47,28 @@ module.exports = {
           '100%': { transform: 'rotate(0.0deg)' },
         },
         slowSpin: {
-          '0%': {transform: 'rotate(0deg)'},
-          '100%': {transform: 'rotate(360deg)'},
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
         },
         fastSpin: {
-          '0%': {transform: 'rotate(0deg)'},
-          '50%': {transform: 'rotate(360deg)'},
-          '100%': {transform: 'rotate(720deg)'},
+          '0%': { transform: 'rotate(0deg)' },
+          '50%': { transform: 'rotate(360deg)' },
+          '100%': { transform: 'rotate(720deg)' },
         },
         smallBounce: {
           '0%, 100%': {
-            transform: 'translateY(-3%)',            
+            transform: 'translateY(-3%)',
           },
           '50%': {
-            transform: 'translateY(3%)',            
+            transform: 'translateY(3%)',
           }
         },
         jsIconAnimation: {
           '0%, 100%': {
-            transform: 'scale(100%)',            
+            transform: 'scale(100%)',
           },
           '50%': {
-            transform: 'scale(105%)',            
+            transform: 'scale(105%)',
           }
         },
         play: {
@@ -97,17 +101,17 @@ module.exports = {
         },
         skillsAnimation: {
           '0%': {
-            opacity:0,
-            
+            opacity: 0,
+
           },
           '100%': {
-            opacity:100,
+            opacity: 100,
           }
-
         }
-        
+
       },
       animation: {
+        slide: 'slide 6s linear infinite',
         gradientAnimation: 'gradientAnimation 3s ease-in-out infinite ',
         blink: 'blink 1s ease-in-out infinite ',
         wave: 'wave 3s ease-in-out infinite',

@@ -24,7 +24,6 @@ const Hero = () => {
                     <span className='inline-flex animate-blink opacity-0'>_</span>
                     &nbsp;<RiCodeSSlashFill className='inline-block items-center my-1' />
                 </div>
-
             </div>
         </section>
     )
