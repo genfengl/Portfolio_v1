@@ -19,8 +19,16 @@ const Play = () => {
 
                     {/* Button links to GitHub and LinkedIn */}
                     <div className='flex flex-row gap-3 col-start-1 col-end-1 row-start-1 row-end-2 lg:row-start-4 lg:row-end-5'>
-                        <a href="https://github.com/genfengl" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all sm:text-4xl'><FaGithub /></a>
-                        <a href="https://linkedin.com/in/geraldlgf" className='flex items-center text-2xl hover:scale-110 hover:text-blue-600 transition-all sm:text-4xl'><FaLinkedin /></a>
+                        <a href="https://www.github.com/genfengl" target="_blank" className='p-3 shadow-xl rounded-full bg-word transition-all group 
+                        hover:bg-materialBlack dark:bg-materialBlack dark:hover:bg-word'>
+                            <FaGithub className='flex items-center text-2xl text-materialBlack
+                            group-hover:text-word dark:text-word dark:group-hover:text-materialBlack transition-all sm:text-4xl' />
+                        </a>
+                        <a href="https://www.linkedin.com/in/geraldlgf/" target="_blank" className='p-3 shadow-xl rounded-full bg-word transition-all group 
+                        hover:bg-blue-600 dark:bg-materialBlack dark:hover:bg-word'>
+                            <FaLinkedin className='flex items-center text-2xl text-blue-600 dark:text-word
+                            group-hover:text-word dark:group-hover:text-blue-600 transition-all sm:text-4xl' />
+                        </a>
                     </div>
                 </div>
 

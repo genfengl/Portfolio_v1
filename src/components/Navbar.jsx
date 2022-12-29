@@ -46,10 +46,10 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
                 </div>
 
                 {/* Mobile Nav */}
-                <div className="md:hidden   ">
-                    <div className={`absolute flex flex-col gap-5 items-start self-end py-6 font-bold h-screen w-screen z-20 backdrop-blur-2xl
-                    -left-full top-9
-                    transition-all  ${showMobileNav ? '-left-0 duration-1000' : 'opacity-0'}`}>
+                <div className="md:opacity-0 -z-10">
+                    <div className={`absolute flex flex-col gap-5 items-start self-end py-6 font-bold h-screen w-screen backdrop-blur-2xl
+                     top-9
+                    transition-all  ${showMobileNav ? '-left-0 duration-1000' : '-left-[120%] opacity-0'}`}>
                         <button onClick={() => setShowMobileNav(!showMobileNav)}>
                             <div className="flex items-center gap-3">
                                 <div className="w-2 h-2 bg-pink-500"></div>
@@ -88,12 +88,12 @@ const Navbar = ({ theme, handleThemeSwitch }) => {
                             
                         </div>
                     </button>
-                    <div className="absolute -translate-x-[19.5rem] rotate-45 translate-y-10 text-sm font-normal transition-opacity
+                    <div className="absolute -translate-x-[19.5rem] rotate-45 translate-y-10 text-sm font-normal transition-all
                             border-materialBlack border-t-2 border-l-2 opacity-0 w-4 h-4 text-middle text-center z-10 bg-word
                             dark:bg-materialBlack dark:border-word
                             peer-hover:opacity-100 "></div>
-                    <div className="absolute -translate-x-56 translate-y-[3.7rem] text-sm p-2 font-normal rounded-lg transition-opacity
-                            border-materialBlack border-2 opacity-0 w-48 text-middle text-center  dark:bg-materialBlack
+                    <div className="absolute -translate-x-56 translate-y-[3.7rem] text-sm p-2 font-normal rounded-lg transition-all
+                            border-materialBlack border-2 opacity-0 w-48 text-middle text-center bg-word  dark:bg-materialBlack
                             dark:border-word dark:text-word
                             peer-hover:opacity-100">{theme === 'light' ? 'Sunlight hurts my eyes!' : 'Afraid of the dark?'}</div>
                     <div>
