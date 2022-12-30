@@ -2,27 +2,12 @@ import { FaGithub, FaLinkedin, FaReact, FaPython } from 'react-icons/fa'
 import { SiJavascript, SiNodedotjs } from 'react-icons/si'
 import { Player } from '@lottiefiles/react-lottie-player'
 import { TypeAnimation } from 'react-type-animation'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 
 
 const Play = () => {
-    const [city, setCity] = useState('🇭🇰')
-
-    useEffect(() => {
-        const timeout = setTimeout(() => {
-            if (city === '🇭🇰') {
-                setCity('🇦🇺')
-            } else if (city === '🇦🇺') {
-                setCity('🇬🇧')
-            } else if (city === '🇬🇧') {
-                setCity('🇭🇰')
-            }
-        }, 4375)
-
-        return () => clearTimeout(timeout)
-    }, [city])
-
+    const [city, setCity] = useState('')
 
     return (
         <section id="play">
@@ -108,7 +93,7 @@ const Play = () => {
                 group-hover:-translate-x-10 group-hover:translate-y-0 group-hover:-rotate-3">
                         <div className='flex flex-col p-6 gap-6 text-xl font-bold'>
                             <div>
-                                A Cat Dad...
+                                
                             </div>
                             <img src='IMG_4816.jpg' className='rounded-xl object-cover aspect-square'></img>
                         </div>
@@ -123,7 +108,7 @@ const Play = () => {
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-slate-300 transition-all -translate-x-2 -rotate-3
                     backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
                 group-hover:translate-x-24 group-hover:translate-y-1 group-hover:rotate-6">
-                        <div className='flex flex-col p-6 gap-6 text-xl font-bold'>
+                        <div className='flex flex-col p-6 gap-6 text-base font-bold'>
 
                             <div className='flex gap-2'>
                                 <div>
@@ -131,13 +116,27 @@ const Play = () => {
                                 </div>
                                 <TypeAnimation
                                     sequence={[
-                                        'HKG',
+                                        () => {
+                                            setCity('🇭🇰')
+                                        },
+                                        'Hong Kong',
+                                        
                                         4000,
-                                        'MEL',
+                                        () => {
+                                            setCity('🇦🇺')
+                                        },
+                                        'Melbourne',
+                                        
                                         4000,
-                                        'LDN',
+                                        () => {
+                                            setCity('🇬🇧')
+                                        },
+                                        'London',
+                                        
                                         4000
                                     ]}
+                                    speed={10}
+                                    
                                     repeat={Infinity}
                                 />
                             </div>
