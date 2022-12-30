@@ -2,10 +2,28 @@ import { FaGithub, FaLinkedin, FaReact, FaPython } from 'react-icons/fa'
 import { SiJavascript, SiNodedotjs } from 'react-icons/si'
 import { Player } from '@lottiefiles/react-lottie-player'
 import { TypeAnimation } from 'react-type-animation'
+import { useEffect, useState } from 'react'
 
 
 
 const Play = () => {
+    const [city, setCity] = useState('🇭🇰')
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            if (city === '🇭🇰') {
+                setCity('🇦🇺')
+            } else if (city === '🇦🇺') {
+                setCity('🇬🇧')
+            } else if (city === '🇬🇧') {
+                setCity('🇭🇰')
+            }
+        }, 4375)
+
+        return () => clearTimeout(timeout)
+    }, [city])
+
+
     return (
         <section id="play">
             <div className='container px-6
@@ -66,7 +84,18 @@ const Play = () => {
                     {/* big-card 1 */}
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-600 transition-all -translate-x-4 -rotate-1
                     backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
-                group-hover:-translate-x-40 group-hover:translate-y-3 group-hover:-rotate-[18deg] "></div>
+                group-hover:-translate-x-40 group-hover:translate-y-3 group-hover:-rotate-[18deg] ">
+                    <div className='grid grid-cols-[118px_118px] grid-rows-[100px_100px_100px] rounded-xl'>
+                        <img src='tangy1.jpg' className='object-contain  rounded-tl-xl'></img>
+                        
+                        <img src='tangy3.jpg' className='object-contain  rounded-tr-xl'></img>
+
+                        <img src='tangy2.jpg' className='object-contain  rounded-bl-xl'></img>
+                        <img src='tangy4.jpg' className='object-contain  rounded-br-xl'></img>
+                        <img src='tangy4.jpg' className='object-contain  rounded-bl-xl'></img>
+                        <img src='tangy4.jpg' className='object-contain  rounded-bl-xl'></img>
+                    </div>
+                </div>
                     {/* small-card 2 */}
                     <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all
                     backdrop-blur-xl bg-opacity-30
@@ -76,7 +105,14 @@ const Play = () => {
                     {/* big-card 2 */}
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-300 transition-all rotate-3
                     backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
-                group-hover:-translate-x-10 group-hover:translate-y-0 group-hover:-rotate-3"></div>
+                group-hover:-translate-x-10 group-hover:translate-y-0 group-hover:-rotate-3">
+                        <div className='flex flex-col p-6 gap-6 text-xl font-bold'>
+                            <div>
+                                A Cat Dad...
+                            </div>
+                            <img src='IMG_4816.jpg' className='rounded-xl object-cover aspect-square'></img>
+                        </div>
+                    </div>
                     {/* small-card 3 */}
                     <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-slate-200
                     backdrop-blur-xl bg-opacity-60 bg-gradient-to-br from-blue-500 to-cyan-500
@@ -87,20 +123,24 @@ const Play = () => {
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-slate-300 transition-all -translate-x-2 -rotate-3
                     backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
                 group-hover:translate-x-24 group-hover:translate-y-1 group-hover:rotate-6">
-                        <div className='flex flex-col p-6 gap-3 text-lg font-bold'>
+                        <div className='flex flex-col p-6 gap-6 text-xl font-bold'>
 
-
-                            <TypeAnimation
-                                sequence={[
-                                    '🇭🇰 HKG',
-                                    3000,
-                                    '🇦🇺 MEL',
-                                    3000,
-                                    '🇬🇧 LDN',
-                                    3000
-                                ]}
-                                repeat={Infinity}
-                            />
+                            <div className='flex gap-2'>
+                                <div>
+                                    {city}
+                                </div>
+                                <TypeAnimation
+                                    sequence={[
+                                        'HKG',
+                                        4000,
+                                        'MEL',
+                                        4000,
+                                        'LDN',
+                                        4000
+                                    ]}
+                                    repeat={Infinity}
+                                />
+                            </div>
                             <Player src='https://assets9.lottiefiles.com/datafiles/AtGF4p7zA8LpP2R/data.json'
                                 loop
                                 autoplay
