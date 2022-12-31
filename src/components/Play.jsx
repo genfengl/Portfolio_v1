@@ -67,10 +67,10 @@ const Play = () => {
                         <FaPython className='w-full h-full rounded-xl p-3 text-yellow-300 animate-wave ' />
                     </div>
                     {/* big-card 1 */}
-                    <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-600 transition-all -translate-x-4 -rotate-1
-                    backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
+                    <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-slate-200 transition-all -translate-x-4 -rotate-1
+                    backdrop-blur-xl bg-opacity-60 border-4 border-slate-200
                 group-hover:-translate-x-40 group-hover:translate-y-3 group-hover:-rotate-[18deg] ">
-                    <div className='grid grid-cols-[118px_118px] grid-rows-[100px_100px_100px] rounded-xl'>
+                    <div className='grid grid-cols-[116px_116px] grid-rows-[100px_100px_100px] rounded-xl'>
                         <img src='tangy1.jpg' className='object-contain  rounded-tl-xl'></img>
                         
                         <img src='tangy3.jpg' className='object-contain  rounded-tr-xl'></img>
@@ -91,9 +91,9 @@ const Play = () => {
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-300 transition-all rotate-3
                     backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
                 group-hover:-translate-x-10 group-hover:translate-y-0 group-hover:-rotate-3">
-                        <div className='flex flex-col p-6 gap-6 text-xl font-bold'>
+                        <div className='flex flex-col p-6 gap-6 font-bold'>
                             <div>
-                                
+                                A cat dad 🐈
                             </div>
                             <img src='IMG_4816.jpg' className='rounded-xl object-cover aspect-square'></img>
                         </div>
@@ -109,7 +109,7 @@ const Play = () => {
                     backdrop-blur-xl bg-opacity-60 border-2 border-slate-200
                 group-hover:translate-x-24 group-hover:translate-y-1 group-hover:rotate-6">
                         <div className='flex flex-col p-6 gap-6 text-base font-bold'>
-
+                        
                             <div className='flex gap-2'>
                                 <div>
                                     {city}

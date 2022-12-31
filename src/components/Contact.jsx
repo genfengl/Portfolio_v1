@@ -17,7 +17,7 @@ const Contact = () => {
                 I'm currently looking for a junior position in a team of supportive developers. <br />
                 I'm also open to freelance projects. <br />
                 <div className='align-middle bg-blue-500 h-1 my-6 w-6 rounded-lg'></div>
-                Feel free to contact me by submitting the form below and I will get back to you as soon as possible.
+                Feel free to leave me a message. I will get back to you as soon as possible.
             </div>
             <Email />          
         </div>

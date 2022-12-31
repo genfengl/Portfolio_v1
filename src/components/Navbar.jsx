@@ -60,17 +60,18 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
                                 <a href="#projects" className="hover:text-violet-500">Projects</a>
                             </div>
                         </button>
-                        <button onClick={() => changeShowMobileNav(!showMobileNav)}>
-                            <div className="flex items-center gap-3">
-                                <div className="w-2 h-2 bg-yellow-500"></div>
-                                <a href="" className="hover:text-yellow-500">Resume</a>
-                            </div>
-                        </button>
+                        
 
                         <button onClick={() => changeShowMobileNav(!showMobileNav)}>
                             <div className="flex items-center gap-3">
                                 <div className="w-2 h-2 bg-blue-500"></div>
                                 <a href="#contact" className="hover:text-blue-500">Contact</a>
+                            </div>
+                        </button>
+                        <button onClick={() => changeShowMobileNav(!showMobileNav)}>
+                            <div className="flex items-center gap-3">
+                                <div className="w-2 h-2 bg-yellow-500"></div>
+                                <a href="" className="hover:text-yellow-500">Resume</a>
                             </div>
                         </button>
                     </div>
@@ -100,11 +101,12 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
                     <div>
                         <a href="#projects" className="transition-all hover:text-violet-500 dark:hover:text-purple-400">Projects</a>
                     </div>
-                    <div>
-                        <a href="/Resume.pdf" download="Gerald Liu Resume" className="transition-all hover:text-yellow-500 dark:hover:text-yellow-300">Resume</a>
-                    </div>
+                    
                     <div>
                         <a href="#contact" className="transition-all hover:text-blue-500 dark:hover:text-blue-400">Contact</a>
+                    </div>
+                    <div>
+                        <a href="/Resume.pdf" download="Gerald Liu Resume" className="transition-all hover:text-yellow-500 dark:hover:text-yellow-300">Resume</a>
                     </div>
 
                 </div>
