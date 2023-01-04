@@ -30,7 +30,7 @@ const Projects = () => {
                                 ${project1TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
                                     ChatUp!
                                 </div>
-                                <div className={`text-xl transition-all-all duration-1000 delay-500 ease-in-out
+                                <div className={`text-xl transition-all duration-1000 delay-500 ease-in-out
                                 ${project1TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
                                     Instant messenger app
                                 </div>

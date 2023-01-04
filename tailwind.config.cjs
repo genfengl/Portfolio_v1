@@ -107,6 +107,20 @@ module.exports = {
           '100%': {
             opacity: 100,
           }
+        },
+        catPhotos: {
+          '0%': {
+            opacity: 0,
+          },
+          '8%': {
+            opacity: 100
+          },
+          '87%': {
+            opacity: 100
+          },
+          '95%': {
+            opacity: 0
+          }
         }
 
       },
@@ -125,6 +139,7 @@ module.exports = {
         skills1Animation: 'skillsAnimation 2s ease-in-out 1',
         skills2Animation: 'skillsAnimation 3s ease-in-out 1',
         skills3Animation: 'skillsAnimation 4s ease-in-out 1',
+        catPhotos: 'catPhotos 8s ease-in-out infinite'
       },
 
       transitionDelay: {
