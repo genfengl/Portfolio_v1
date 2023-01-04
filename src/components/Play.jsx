@@ -124,7 +124,7 @@ const Play = () => {
                 </div>
 
                 {/* The card show */}
-                <div className="col-start-2 col-end-3 row-start-4 row-end-5 place-items-center group -translate-x-12 translate-y-6 hidden transition-all 
+                <div className="col-start-2 col-end-3 row-start-4 row-end-5 place-items-center group -translate-x-6 translate-y-6 hidden transition-all 
                 md:grid lg:row-start-1 lg:col-start-3 lg:translate-x-6 lg:translate-y-10">
                     {/* small-card 1 */}
                     <div className="w-28 shadow-2xl aspect-[5/5] absolute rounded-xl transition-all bg-blue-600
