@@ -224,7 +224,7 @@ const Play = () => {
                 border-2 border-slate-200 backdrop-blur-xl bg-opacity-60
                 group-hover:translate-x-52 group-hover:translate-y-4 group-hover:rotate-[20deg] ">
                         <div className="flex flex-col gap-3 text-l text-word px-6 py-10 max-w-lg">
-                            <div className='text-2xl font-bold'>Hi, I'm Gerald <span className="inline-block animate-wave">👋</span></div>
+                            <div className='text-xl font-bold'>Hi, I'm Gerald! <span className="inline-block animate-wave">👋</span></div>
                             <div>
                                 A software engineer, skilled in frontend, full stack and web development. <br />
                             </div>
