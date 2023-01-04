@@ -7,7 +7,7 @@ const Hero = () => {
         // Hero section
         <section id='hero'>
             {/* Flex Container */}
-            <div className="container flex flex-col px-6 py-16 sm:mx-6 lg:mx-14">
+            <div className="container flex flex-col px-6 py-16 sm:mx-auto lg:mx-14">
                 <div className="text-4xl font-bold flex flex-wrap max-w-3xl sm:text-6xl dark:text-word">
                     <RiCodeFill className='inline-flex items-center mt-1' />&nbsp;
                     <span>Transforming&nbsp;</span>
