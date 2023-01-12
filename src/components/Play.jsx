@@ -17,7 +17,7 @@ const Play = () => {
             setPhotoAnimate(true)
             const animationTimer = setTimeout(() => {
                 setPhotoAnimate(false)
-            }, 7800)
+            }, 7500)
             return () => {
                 clearTimeout(animationTimer)
             }
@@ -26,7 +26,7 @@ const Play = () => {
             setPhotoAnimate(true)
             const animationTimer = setTimeout(() => {
                 setPhotoAnimate(false)
-            }, 7800)
+            }, 7500)
             return () => {
                 clearTimeout(animationTimer)
             }
@@ -35,7 +35,7 @@ const Play = () => {
             setPhotoAnimate(true)
             const animationTimer = setTimeout(() => {
                 setPhotoAnimate(false)
-            }, 7800)
+            }, 7500)
             return () => {
                 clearTimeout(animationTimer)
             }
@@ -44,7 +44,7 @@ const Play = () => {
             setPhotoAnimate(true)
             const animationTimer = setTimeout(() => {
                 setPhotoAnimate(false)
-            }, 7800)
+            }, 7500)
             return () => {
                 clearTimeout(animationTimer)
             }
@@ -53,7 +53,7 @@ const Play = () => {
             setPhotoAnimate(true)
             const animationTimer = setTimeout(() => {
                 setPhotoAnimate(false)
-            }, 7800)
+            }, 7500)
             return () => {
                 clearTimeout(animationTimer)
             }
@@ -62,7 +62,7 @@ const Play = () => {
             setPhotoAnimate(true)
             const animationTimer = setTimeout(() => {
                 setPhotoAnimate(false)
-            }, 7800)
+            }, 7500)
             return () => {
                 clearTimeout(animationTimer)
             }
@@ -136,16 +136,16 @@ const Play = () => {
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-slate-200 transition-all -translate-x-4 -rotate-1
                     backdrop-blur-xl bg-opacity-60 border-4 border-slate-200
                 group-hover:-translate-x-40 group-hover:translate-y-3 group-hover:-rotate-[18deg] ">
-                        <div className={`grid grid-cols-[116px_116px] grid-rows-[106px_106px_106px] rounded-xl
+                        <div className={`grid grid-cols-[116px_116px] grid-rows-[106px_106px_106px] rounded-xl transition-all
                         ${photoAnimate ? 'animate-catPhotos' : ''} opacity-0`}>
-                            <img src={catPhotos[0]} className={`object-fill aspect-square rounded-tl-xl`}></img>
+                            <img src={catPhotos[0]} className={`object-fill aspect-square rounded-tl-xl transition-all`}></img>
 
-                            <img src={catPhotos[1]} className='object-fill aspect-square rounded-tr-xl'></img>
+                            <img src={catPhotos[1]} className='object-fill aspect-square rounded-tr-xl transition-all'></img>
 
-                            <img src={catPhotos[2]} className='object-fill aspect-square rounded-bl-xl'></img>
-                            <img src={catPhotos[3]} className='object-fill aspect-square rounded-br-xl'></img>
-                            <img src={catPhotos[4]} className='object-fill aspect-square rounded-bl-xl'></img>
-                            <img src={catPhotos[5]} className='object-fill aspect-square rounded-br-xl'></img>
+                            <img src={catPhotos[2]} className='object-fill aspect-square rounded-bl-xl transition-all'></img>
+                            <img src={catPhotos[3]} className='object-fill aspect-square rounded-br-xl transition-all'></img>
+                            <img src={catPhotos[4]} className='object-fill aspect-square rounded-bl-xl transition-all'></img>
+                            <img src={catPhotos[5]} className='object-fill aspect-square rounded-br-xl transition-all'></img>
                         </div>
                     </div>
                     {/* small-card 2 */}

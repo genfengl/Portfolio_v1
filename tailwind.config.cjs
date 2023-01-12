@@ -26,7 +26,7 @@ module.exports = {
       keyframes: {
         slide: {
           '0%': { transform: 'translateX(0)' },
-          '100%': {transform: 'translateX(-50%)'}
+          '100%': { transform: 'translateX(-50%)' }
         },
         gradientAnimation: {
           '0, 100%': { backgroundPosition: '0% 0%' },
@@ -112,7 +112,7 @@ module.exports = {
           '0%': {
             opacity: 0,
           },
-          '8%': {
+          '10%': {
             opacity: 100
           },
           '87%': {
@@ -121,9 +121,26 @@ module.exports = {
           '95%': {
             opacity: 0
           }
-        }
-
+        },
+        catPhotosCrossfade: {
+          '0%': {
+            opacity: 1
+          },
+          '11.1%': {
+            opacity: 1
+          },
+          '16.67%': {
+            opacity: 0
+          },
+          '94.43%': {
+            opacity: 0
+          },
+          '100%': {
+            opacity: 1
+          }
+        },
       },
+
       animation: {
         slide: 'slide 6s linear infinite',
         gradientAnimation: 'gradientAnimation 3s ease-in-out infinite ',
@@ -149,6 +166,13 @@ module.exports = {
         '1200': '1200ms',
         '1500': '1500ms',
         '2000': '2000ms',
+        '6000': '6000ms',
+        '12000': '12000ms',
+        '18000': '18000ms',
+        '24000': '24000ms',
+        '30000': '30000ms',
+        
+
       },
 
       backgroundSize: {
@@ -159,7 +183,6 @@ module.exports = {
         'pos-0': '0% 0%',
         'pos-100': '100% 100%',
       },
-
     },
   },
   plugins: [],
