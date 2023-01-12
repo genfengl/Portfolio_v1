@@ -7,6 +7,7 @@ import About from './About'
 import Skills from './Skills'
 import Projects from './Projects'
 import Contact from './Contact'
+import { FaArrowAltCircleUp } from 'react-icons/fa'
 
 const Home = () => {
     const [showMobileNav, setShowMobileNav] = useState(false)
@@ -45,13 +46,15 @@ const Home = () => {
     return (
         <div className={`relative w-full max-w scroll-smooth ${showMobileNav ? '' : ''}   dark:bg-materialBlack`}>
             <Navbar handleThemeSwitch={handleThemeSwitch} theme={theme} changeShowMobileNav={changeShowMobileNav} showMobileNav={showMobileNav} />
-            <div className={`flex flex-col gap-16 ${showMobileNav ? '' : ''} overflow-x-hidden 2xl:container 2xl:mx-auto`}>
+            
+            <div className={`relative flex flex-col gap-16 ${showMobileNav ? '' : ''} overflow-x-hidden 2xl:container 2xl:mx-auto`}>
                 <Hero />
                 <Play />
                 <About />
                 <Skills />
                 <Projects />
                 <Contact />
+                
             </div>
         </div>
     )

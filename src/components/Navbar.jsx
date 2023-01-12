@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { FaBarcode, FaLightbulb, FaRegLightbulb } from "react-icons/fa"
+import { FaArrowAltCircleUp, FaBarcode, FaLightbulb, FaRegLightbulb } from "react-icons/fa"
 import { MdDarkMode, MdLightMode } from "react-icons/md"
 
 const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }) => {
@@ -8,7 +8,7 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
         <div className={`py-6 px-6 sticky top-0 backdrop-blur-2xl z-20 sm:px-12 lg:px-20 ${showMobileNav ? 'h-screen overflow-hidden' : ''} dark:text-word dark:bg-materialBlack`}>
             {/* Flex container */}
             <div className="grid grid-cols-2 sticky">
-                {/* Brand */}
+                
                 {/* Hamburger Icon */}
                 <div className="col-start-2 row-start-1 flex justify-end items-center mb-1">
                     <button type='button'
@@ -39,8 +39,11 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
                         </div>
                     </div>
                     {/* {theme === 'dark' ? <img src="/logoDark.gif" className="h-6 w-6" /> : <img src="/logoLight.gif" className="h-6 w-6" />} */}
-                    GeraldLiu
-
+                    <button onClick={() => {
+                        window.scrollTo({top:0, left:0, behavior: 'smooth'})
+                    }}>
+                        GeraldLiu
+                    </button>
                 </div>
 
                 {/* Mobile Nav */}
