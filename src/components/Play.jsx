@@ -10,70 +10,70 @@ const Play = () => {
     const [city, setCity] = useState('')
     const [catPhotos, setCatPhotos] = useState(['tangy1.jpg', 'tangy2.jpg', 'tangy3.jpg', 'tangy4.jpg', 'tangy5.jpg', 'tangy6.jpg'])
     const [photoAnimate, setPhotoAnimate] = useState(true)
-    useEffect(() => {
-      const timer = setTimeout(() => {
-        if (catPhotos[0] === 'tangy1.jpg') {
-            setCatPhotos(['tangy2.jpg', 'tangy4.jpg', 'tangy1.jpg', 'tangy6.jpg', 'tangy3.jpg', 'tangy5.jpg']) 
-            setPhotoAnimate(true)
-            const animationTimer = setTimeout(() => {
-                setPhotoAnimate(false)
-            }, 7500)
-            return () => {
-                clearTimeout(animationTimer)
-            }
-        } else if (catPhotos[0] === 'tangy2.jpg') {
-            setCatPhotos(['tangy4.jpg', 'tangy6.jpg', 'tangy2.jpg', 'tangy5.jpg', 'tangy1.jpg', 'tangy3.jpg'])
-            setPhotoAnimate(true)
-            const animationTimer = setTimeout(() => {
-                setPhotoAnimate(false)
-            }, 7500)
-            return () => {
-                clearTimeout(animationTimer)
-            }
-        } else if (catPhotos[0] === 'tangy4.jpg') {
-            setCatPhotos(['tangy6.jpg', 'tangy5.jpg', 'tangy4.jpg', 'tangy3.jpg', 'tangy2.jpg', 'tangy1.jpg'])
-            setPhotoAnimate(true)
-            const animationTimer = setTimeout(() => {
-                setPhotoAnimate(false)
-            }, 7500)
-            return () => {
-                clearTimeout(animationTimer)
-            }
-        } else if (catPhotos[0] === 'tangy6.jpg') {
-            setCatPhotos(['tangy5.jpg', 'tangy3.jpg', 'tangy6.jpg', 'tangy1.jpg', 'tangy4.jpg', 'tangy2.jpg'])
-            setPhotoAnimate(true)
-            const animationTimer = setTimeout(() => {
-                setPhotoAnimate(false)
-            }, 7500)
-            return () => {
-                clearTimeout(animationTimer)
-            }
-        } else if (catPhotos[0] === 'tangy5.jpg') {
-            setCatPhotos(['tangy3.jpg', 'tangy1.jpg', 'tangy5.jpg', 'tangy2.jpg', 'tangy6.jpg', 'tangy4.jpg'])
-            setPhotoAnimate(true)
-            const animationTimer = setTimeout(() => {
-                setPhotoAnimate(false)
-            }, 7500)
-            return () => {
-                clearTimeout(animationTimer)
-            }
-        } else if (catPhotos[0] === 'tangy3.jpg') {
-            setCatPhotos(['tangy1.jpg', 'tangy2.jpg', 'tangy3.jpg', 'tangy4.jpg', 'tangy5.jpg', 'tangy6.jpg'])
-            setPhotoAnimate(true)
-            const animationTimer = setTimeout(() => {
-                setPhotoAnimate(false)
-            }, 7500)
-            return () => {
-                clearTimeout(animationTimer)
-            }
-        }
-      }, 8000)
-    
-      return () => {
-        clearTimeout(timer)
-      }
-    }, [catPhotos])
-    
+    // useEffect(() => {
+    //   const timer = setTimeout(() => {
+    //     if (catPhotos[0] === 'tangy1.jpg') {
+    //         setCatPhotos(['tangy2.jpg', 'tangy4.jpg', 'tangy1.jpg', 'tangy6.jpg', 'tangy3.jpg', 'tangy5.jpg']) 
+    //         setPhotoAnimate(true)
+    //         const animationTimer = setTimeout(() => {
+    //             setPhotoAnimate(false)
+    //         }, 7500)
+    //         return () => {
+    //             clearTimeout(animationTimer)
+    //         }
+    //     } else if (catPhotos[0] === 'tangy2.jpg') {
+    //         setCatPhotos(['tangy4.jpg', 'tangy6.jpg', 'tangy2.jpg', 'tangy5.jpg', 'tangy1.jpg', 'tangy3.jpg'])
+    //         setPhotoAnimate(true)
+    //         const animationTimer = setTimeout(() => {
+    //             setPhotoAnimate(false)
+    //         }, 7500)
+    //         return () => {
+    //             clearTimeout(animationTimer)
+    //         }
+    //     } else if (catPhotos[0] === 'tangy4.jpg') {
+    //         setCatPhotos(['tangy6.jpg', 'tangy5.jpg', 'tangy4.jpg', 'tangy3.jpg', 'tangy2.jpg', 'tangy1.jpg'])
+    //         setPhotoAnimate(true)
+    //         const animationTimer = setTimeout(() => {
+    //             setPhotoAnimate(false)
+    //         }, 7500)
+    //         return () => {
+    //             clearTimeout(animationTimer)
+    //         }
+    //     } else if (catPhotos[0] === 'tangy6.jpg') {
+    //         setCatPhotos(['tangy5.jpg', 'tangy3.jpg', 'tangy6.jpg', 'tangy1.jpg', 'tangy4.jpg', 'tangy2.jpg'])
+    //         setPhotoAnimate(true)
+    //         const animationTimer = setTimeout(() => {
+    //             setPhotoAnimate(false)
+    //         }, 7500)
+    //         return () => {
+    //             clearTimeout(animationTimer)
+    //         }
+    //     } else if (catPhotos[0] === 'tangy5.jpg') {
+    //         setCatPhotos(['tangy3.jpg', 'tangy1.jpg', 'tangy5.jpg', 'tangy2.jpg', 'tangy6.jpg', 'tangy4.jpg'])
+    //         setPhotoAnimate(true)
+    //         const animationTimer = setTimeout(() => {
+    //             setPhotoAnimate(false)
+    //         }, 7500)
+    //         return () => {
+    //             clearTimeout(animationTimer)
+    //         }
+    //     } else if (catPhotos[0] === 'tangy3.jpg') {
+    //         setCatPhotos(['tangy1.jpg', 'tangy2.jpg', 'tangy3.jpg', 'tangy4.jpg', 'tangy5.jpg', 'tangy6.jpg'])
+    //         setPhotoAnimate(true)
+    //         const animationTimer = setTimeout(() => {
+    //             setPhotoAnimate(false)
+    //         }, 7500)
+    //         return () => {
+    //             clearTimeout(animationTimer)
+    //         }
+    //     }
+    //   }, 8000)
+
+    //   return () => {
+    //     clearTimeout(timer)
+    //   }
+    // }, [catPhotos])
+
 
     return (
         <section id="play">
@@ -136,16 +136,98 @@ const Play = () => {
                     <div className="w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-slate-200 transition-all -translate-x-4 -rotate-1
                     backdrop-blur-xl bg-opacity-60 border-4 border-slate-200
                 group-hover:-translate-x-40 group-hover:translate-y-3 group-hover:-rotate-[18deg] ">
-                        <div className={`grid grid-cols-[116px_116px] grid-rows-[106px_106px_106px] rounded-xl transition-all
-                        ${photoAnimate ? 'animate-catPhotos' : ''} opacity-0`}>
-                            <img src={catPhotos[0]} className={`object-fill aspect-square rounded-tl-xl transition-all`}></img>
+                        <div className={`grid grid-cols-[116px_116px] grid-rows-[106px_106px_106px] rounded-xl transition-all`}>
+                            {/* Square top left */}
+                            <div className='relative'>
+                                <img src={catPhotos[0]} className={`object-fill absolute left-0 aspect-square rounded-tl-xl 
+                                animate-catPhotosCrossfade0 opacity-0`}></img>
+                                <img src={catPhotos[1]} className='object-fill absolute left-0 aspect-square rounded-tl-xl 
+                                animate-catPhotosCrossfade1 opacity-0 '></img>
+                                <img src={catPhotos[3]} className='object-fill absolute left-0 aspect-square rounded-tl-xl  
+                                animate-catPhotosCrossfade2 opacity-0'></img>
+                                <img src={catPhotos[5]} className='object-fill absolute left-0 aspect-square rounded-tl-xl  
+                                animate-catPhotosCrossfade3 opacity-0'></img>
+                                <img src={catPhotos[4]} className='object-fill absolute left-0 aspect-square rounded-tl-xl  
+                                animate-catPhotosCrossfade4 opacity-0'></img>
+                                <img src={catPhotos[2]} className='object-fill absolute left-0 aspect-square rounded-tl-xl  
+                                animate-catPhotosCrossfade5 opacity-0'></img>
+                            </div>
+                            {/* Square top right */}
+                            <div className='relative'>
+                                <img src={catPhotos[1]} className={`object-fill absolute left-0 aspect-square rounded-tr-xl 
+                                animate-catPhotosCrossfade0 opacity-0`}></img>
+                                <img src={catPhotos[3]} className='object-fill absolute left-0 aspect-square rounded-tr-xl 
+                                animate-catPhotosCrossfade1 opacity-0 '></img>
+                                <img src={catPhotos[5]} className='object-fill absolute left-0 aspect-square rounded-tr-xl  
+                                animate-catPhotosCrossfade2 opacity-0'></img>
+                                <img src={catPhotos[4]} className='object-fill absolute left-0 aspect-square rounded-tr-xl  
+                                animate-catPhotosCrossfade3 opacity-0'></img>
+                                <img src={catPhotos[2]} className='object-fill absolute left-0 aspect-square rounded-tr-xl  
+                                animate-catPhotosCrossfade4 opacity-0'></img>
+                                <img src={catPhotos[0]} className='object-fill absolute left-0 aspect-square rounded-tr-xl  
+                                animate-catPhotosCrossfade5 opacity-0'></img>
+                            </div>
+                            {/* Square middle left */}
+                            <div className='relative'>
+                                <img src={catPhotos[2]} className={`object-fill absolute left-0 aspect-square 
+                                animate-catPhotosCrossfade0 opacity-0`}></img>
+                                <img src={catPhotos[0]} className='object-fill absolute left-0 aspect-square 
+                                animate-catPhotosCrossfade1 opacity-0 '></img>
+                                <img src={catPhotos[1]} className='object-fill absolute left-0 aspect-square  
+                                animate-catPhotosCrossfade2 opacity-0'></img>
+                                <img src={catPhotos[3]} className='object-fill absolute left-0 aspect-square  
+                                animate-catPhotosCrossfade3 opacity-0'></img>
+                                <img src={catPhotos[5]} className='object-fill absolute left-0 aspect-square  
+                                animate-catPhotosCrossfade4 opacity-0'></img>
+                                <img src={catPhotos[4]} className='object-fill absolute left-0 aspect-square  
+                                animate-catPhotosCrossfade5 opacity-0'></img>
+                            </div>
+                            {/* Square middle right */}
+                            <div className='relative'>
+                                <img src={catPhotos[3]} className={`object-fill absolute left-0 aspect-square 
+                                animate-catPhotosCrossfade0 opacity-0`}></img>
+                                <img src={catPhotos[5]} className='object-fill absolute left-0 aspect-square 
+                                animate-catPhotosCrossfade1 opacity-0 '></img>
+                                <img src={catPhotos[4]} className='object-fill absolute left-0 aspect-square  
+                                animate-catPhotosCrossfade2 opacity-0'></img>
+                                <img src={catPhotos[2]} className='object-fill absolute left-0 aspect-square  
+                                animate-catPhotosCrossfade3 opacity-0'></img>
+                                <img src={catPhotos[0]} className='object-fill absolute left-0 aspect-square  
+                                animate-catPhotosCrossfade4 opacity-0'></img>
+                                <img src={catPhotos[1]} className='object-fill absolute left-0 aspect-square  
+                                animate-catPhotosCrossfade5 opacity-0'></img>
+                            </div>
+                            {/* Square bottom left */}
+                            <div className='relative'>
+                                <img src={catPhotos[4]} className={`object-fill absolute left-0 aspect-square rounded-bl-xl 
+                                animate-catPhotosCrossfade0 opacity-0`}></img>
+                                <img src={catPhotos[2]} className='object-fill absolute left-0 aspect-square rounded-bl-xl 
+                                animate-catPhotosCrossfade1 opacity-0 '></img>
+                                <img src={catPhotos[0]} className='object-fill absolute left-0 aspect-square rounded-bl-xl  
+                                animate-catPhotosCrossfade2 opacity-0'></img>
+                                <img src={catPhotos[1]} className='object-fill absolute left-0 aspect-square rounded-bl-xl  
+                                animate-catPhotosCrossfade3 opacity-0'></img>
+                                <img src={catPhotos[3]} className='object-fill absolute left-0 aspect-square rounded-bl-xl  
+                                animate-catPhotosCrossfade4 opacity-0'></img>
+                                <img src={catPhotos[5]} className='object-fill absolute left-0 aspect-square rounded-bl-xl  
+                                animate-catPhotosCrossfade5 opacity-0'></img>
+                            </div>
+                            {/* Square bottom right */}
+                            <div className='relative'>
+                                <img src={catPhotos[5]} className={`object-fill absolute left-0 aspect-square rounded-br-xl 
+                                animate-catPhotosCrossfade0 opacity-0`}></img>
+                                <img src={catPhotos[4]} className='object-fill absolute left-0 aspect-square rounded-br-xl 
+                                animate-catPhotosCrossfade1 opacity-0 '></img>
+                                <img src={catPhotos[2]} className='object-fill absolute left-0 aspect-square rounded-br-xl  
+                                animate-catPhotosCrossfade2 opacity-0'></img>
+                                <img src={catPhotos[0]} className='object-fill absolute left-0 aspect-square rounded-br-xl  
+                                animate-catPhotosCrossfade3 opacity-0'></img>
+                                <img src={catPhotos[1]} className='object-fill absolute left-0 aspect-square rounded-br-xl  
+                                animate-catPhotosCrossfade4 opacity-0'></img>
+                                <img src={catPhotos[3]} className='object-fill absolute left-0 aspect-square rounded-br-xl  
+                                animate-catPhotosCrossfade5 opacity-0'></img>
+                            </div>
 
-                            <img src={catPhotos[1]} className='object-fill aspect-square rounded-tr-xl transition-all'></img>
-
-                            <img src={catPhotos[2]} className='object-fill aspect-square rounded-bl-xl transition-all'></img>
-                            <img src={catPhotos[3]} className='object-fill aspect-square rounded-br-xl transition-all'></img>
-                            <img src={catPhotos[4]} className='object-fill aspect-square rounded-bl-xl transition-all'></img>
-                            <img src={catPhotos[5]} className='object-fill aspect-square rounded-br-xl transition-all'></img>
                         </div>
                     </div>
                     {/* small-card 2 */}
@@ -162,7 +244,16 @@ const Play = () => {
                             <div>
                                 A cat dad 🐈
                             </div>
-                            <img src={catPhotos[5]} className={`rounded-xl object-cover opacity-0 aspect-square ${photoAnimate ? 'animate-catPhotos' : ''}`}></img>
+                            <div className='relative'>
+                                <img src={catPhotos[5]} className='absolute left-0 rounded-xl object-cover opacity-0 aspect-square animate-catPhotosCrossfade0'></img>
+                                <img src={catPhotos[4]} className='absolute left-0 rounded-xl object-cover opacity-0 aspect-square animate-catPhotosCrossfade1'></img>
+                                <img src={catPhotos[2]} className='absolute left-0 rounded-xl object-cover opacity-0 aspect-square animate-catPhotosCrossfade2'></img>
+                                <img src={catPhotos[0]} className='absolute left-0 rounded-xl object-cover opacity-0 aspect-square animate-catPhotosCrossfade3'></img>
+                                <img src={catPhotos[1]} className='absolute left-0 rounded-xl object-cover opacity-0 aspect-square animate-catPhotosCrossfade4'></img>
+                                <img src={catPhotos[3]} className='absolute left-0 rounded-xl object-cover opacity-0 aspect-square animate-catPhotosCrossfade5'></img>
+
+                            </div>
+
                         </div>
                     </div>
                     {/* small-card 3 */}

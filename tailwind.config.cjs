@@ -102,27 +102,12 @@ module.exports = {
         skillsAnimation: {
           '0%': {
             opacity: 0,
-
           },
           '100%': {
             opacity: 100,
           }
         },
-        catPhotos: {
-          '0%': {
-            opacity: 0,
-          },
-          '10%': {
-            opacity: 100
-          },
-          '87%': {
-            opacity: 100
-          },
-          '95%': {
-            opacity: 0
-          }
-        },
-        catPhotosCrossfade: {
+        catPhotosCrossfade0: {
           '0%': {
             opacity: 1
           },
@@ -132,13 +117,110 @@ module.exports = {
           '16.67%': {
             opacity: 0
           },
-          '94.43%': {
+          '94.44%': {
             opacity: 0
           },
           '100%': {
             opacity: 1
           }
         },
+        catPhotosCrossfade1: {
+          '0%': {
+            opacity: 0
+          },
+          '11.1%': {
+            opacity: 0
+          },
+          '16.67%': {
+            opacity: 1
+          },
+          '27.77%': {
+            opacity: 1
+          },
+          '33.33%': {
+            opacity: 0
+          },
+          '100%': {
+            opacity: 0
+          }
+        },
+        catPhotosCrossfade2: {
+          '0%': {
+            opacity: 0
+          },
+          '27.77%': {
+            opacity: 0
+          },
+          '33.33%': {
+            opacity: 1
+          },
+          '44.44%': {
+            opacity: 1
+          },
+          '50%': {
+            opacity: 0
+          },
+          '100%': {
+            opacity: 0
+          }
+        },
+        catPhotosCrossfade3: {
+          '0%': {
+            opacity: 0
+          },
+          '44.44%': {
+            opacity: 0
+          },
+          '50%': {
+            opacity: 1
+          },
+          '61.11%': {
+            opacity: 1
+          },
+          '66.67%': {
+            opacity: 0
+          },
+          '100%': {
+            opacity: 0
+          }
+        },
+        catPhotosCrossfade4: {
+          '0%': {
+            opacity: 0
+          },
+          '61.11%': {
+            opacity: 0
+          },
+          '66.67%': {
+            opacity: 1
+          },
+          '77.78%': {
+            opacity: 1
+          },
+          '83.33%': {
+            opacity: 0
+          },
+          '100%': {
+            opacity: 0
+          }
+        },
+        catPhotosCrossfade5: {
+          '0%': {
+            opacity: 0
+          },
+          '77.78%': {
+            opacity: 0
+          },
+          '83.33%': {
+            opacity: 1
+          },
+          '94.44%': {
+            opacity: 1
+          },
+          '100%': {
+            opacity: 0
+          }
+        }
       },
 
       animation: {
@@ -156,7 +238,13 @@ module.exports = {
         skills1Animation: 'skillsAnimation 2s ease-in-out 1',
         skills2Animation: 'skillsAnimation 3s ease-in-out 1',
         skills3Animation: 'skillsAnimation 4s ease-in-out 1',
-        catPhotos: 'catPhotos 8s ease-in-out infinite'
+        catPhotos: 'catPhotos 8s ease-in-out infinite',
+        catPhotosCrossfade0: 'catPhotosCrossfade0 48s linear infinite',
+        catPhotosCrossfade1: 'catPhotosCrossfade1 48s linear infinite',
+        catPhotosCrossfade2: 'catPhotosCrossfade2 48s linear infinite',
+        catPhotosCrossfade3: 'catPhotosCrossfade3 48s linear infinite',
+        catPhotosCrossfade4: 'catPhotosCrossfade4 48s linear infinite',
+        catPhotosCrossfade5: 'catPhotosCrossfade5 48s linear infinite',
       },
 
       transitionDelay: {
@@ -171,7 +259,9 @@ module.exports = {
         '18000': '18000ms',
         '24000': '24000ms',
         '30000': '30000ms',
-        
+      },
+
+      animationDelay: {
 
       },
 
