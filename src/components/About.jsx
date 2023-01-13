@@ -18,8 +18,8 @@ const About = () => {
         // About section
         <section id='about'>
             {/* Flex Container */}
-            <div className="container grid place-content-start relative px-6 py-16 sm:mx-6 sm:text-xl md:hidden dark:text-word">
-                <button className="translate-x-12 -translate-y-28 text-left"
+            <div className="container flex justify-center relative px-6 py-16 my-6 mx-auto md:hidden dark:text-word">
+                <button className="-translate-x-[120px] -translate-y-28"
                     onClick={() => handleCardClick()}>
                     {/* big-card 1: cat photos */}
                     <div className={`w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-slate-200 transition-all ease-in-out duration-1000
@@ -121,7 +121,7 @@ const About = () => {
                     </div>
                     {/* big-card 2 */}
                     <div className={`w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-blue-300 transition-all ease-in-out duration-1000
-                    backdrop-blur-xl bg-opacity-60  border-slate-200 
+                    backdrop-blur-xl bg-opacity-60  border-slate-200 text-left
                     ${activeCard === 2 ? 'scale-100 delay-300' : 'scale-0 translate-x-36'}
                     ${activeCard === 1 ? '-translate-x-36' : ''}`}>
                         <div className='flex flex-col p-6 gap-6 font-bold'>
@@ -181,7 +181,7 @@ const About = () => {
                     </div>
                     {/* big-card 4 */}
                     <div className={`w-60 shadow-2xl aspect-[5/7] absolute rounded-xl bg-materialBlack transition-all ease-in-out duration-1000
-                     border-slate-200 backdrop-blur-xl bg-opacity-60 
+                     border-slate-200 backdrop-blur-xl bg-opacity-60 text-left
                     ${activeCard === 0 ? 'scale-100 delay-300' : 'scale-0 translate-x-36'}
                     ${activeCard === 3 ? '-translate-x-36' : ''}`}>
                         <div className="flex flex-col gap-3 text-l text-word px-6 py-10 max-w-lg">

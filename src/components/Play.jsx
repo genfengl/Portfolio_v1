@@ -10,70 +10,6 @@ const Play = () => {
     const [city, setCity] = useState('')
     const [catPhotos, setCatPhotos] = useState(['tangy1.jpg', 'tangy2.jpg', 'tangy3.jpg', 'tangy4.jpg', 'tangy5.jpg', 'tangy6.jpg'])
     const [photoAnimate, setPhotoAnimate] = useState(true)
-    // useEffect(() => {
-    //   const timer = setTimeout(() => {
-    //     if (catPhotos[0] === 'tangy1.jpg') {
-    //         setCatPhotos(['tangy2.jpg', 'tangy4.jpg', 'tangy1.jpg', 'tangy6.jpg', 'tangy3.jpg', 'tangy5.jpg']) 
-    //         setPhotoAnimate(true)
-    //         const animationTimer = setTimeout(() => {
-    //             setPhotoAnimate(false)
-    //         }, 7500)
-    //         return () => {
-    //             clearTimeout(animationTimer)
-    //         }
-    //     } else if (catPhotos[0] === 'tangy2.jpg') {
-    //         setCatPhotos(['tangy4.jpg', 'tangy6.jpg', 'tangy2.jpg', 'tangy5.jpg', 'tangy1.jpg', 'tangy3.jpg'])
-    //         setPhotoAnimate(true)
-    //         const animationTimer = setTimeout(() => {
-    //             setPhotoAnimate(false)
-    //         }, 7500)
-    //         return () => {
-    //             clearTimeout(animationTimer)
-    //         }
-    //     } else if (catPhotos[0] === 'tangy4.jpg') {
-    //         setCatPhotos(['tangy6.jpg', 'tangy5.jpg', 'tangy4.jpg', 'tangy3.jpg', 'tangy2.jpg', 'tangy1.jpg'])
-    //         setPhotoAnimate(true)
-    //         const animationTimer = setTimeout(() => {
-    //             setPhotoAnimate(false)
-    //         }, 7500)
-    //         return () => {
-    //             clearTimeout(animationTimer)
-    //         }
-    //     } else if (catPhotos[0] === 'tangy6.jpg') {
-    //         setCatPhotos(['tangy5.jpg', 'tangy3.jpg', 'tangy6.jpg', 'tangy1.jpg', 'tangy4.jpg', 'tangy2.jpg'])
-    //         setPhotoAnimate(true)
-    //         const animationTimer = setTimeout(() => {
-    //             setPhotoAnimate(false)
-    //         }, 7500)
-    //         return () => {
-    //             clearTimeout(animationTimer)
-    //         }
-    //     } else if (catPhotos[0] === 'tangy5.jpg') {
-    //         setCatPhotos(['tangy3.jpg', 'tangy1.jpg', 'tangy5.jpg', 'tangy2.jpg', 'tangy6.jpg', 'tangy4.jpg'])
-    //         setPhotoAnimate(true)
-    //         const animationTimer = setTimeout(() => {
-    //             setPhotoAnimate(false)
-    //         }, 7500)
-    //         return () => {
-    //             clearTimeout(animationTimer)
-    //         }
-    //     } else if (catPhotos[0] === 'tangy3.jpg') {
-    //         setCatPhotos(['tangy1.jpg', 'tangy2.jpg', 'tangy3.jpg', 'tangy4.jpg', 'tangy5.jpg', 'tangy6.jpg'])
-    //         setPhotoAnimate(true)
-    //         const animationTimer = setTimeout(() => {
-    //             setPhotoAnimate(false)
-    //         }, 7500)
-    //         return () => {
-    //             clearTimeout(animationTimer)
-    //         }
-    //     }
-    //   }, 8000)
-
-    //   return () => {
-    //     clearTimeout(timer)
-    //   }
-    // }, [catPhotos])
-
 
     return (
         <section id="play">
@@ -119,7 +55,7 @@ const Play = () => {
                     mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall"></div>
                     <div className="absolute top-1 -left-2 w-48 h-48 bg-blue-300 rounded-full 
                     mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall animation-delay-3000"></div>
-                    <div className="absolute -bottom-7 left-12 w-48 h-48 bg-pink-300 rounded-full 
+                    <div className="absolute bottom-8 left-12 w-48 h-48 bg-pink-300 rounded-full 
                     mix-blend-multiply filter blur-2xl opacity-60 animate-playSmall animation-delay-5000"></div>
                 </div>
 
