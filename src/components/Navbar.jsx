@@ -8,7 +8,7 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
         <div className={`py-6 px-6 sticky top-0 backdrop-blur-2xl z-20 sm:px-12 lg:px-20 ${showMobileNav ? 'h-screen overflow-hidden' : ''} dark:text-word dark:bg-materialBlack`}>
             {/* Flex container */}
             <div className="grid grid-cols-2 sticky">
-                
+
                 {/* Hamburger Icon */}
                 <div className="col-start-2 row-start-1 flex justify-end items-center mb-1">
                     <button type='button'
@@ -17,9 +17,9 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
                     >
                         <div className="align-middle relative transition-all text-xl translate-y-[2px] scale-110 hover:scale-125">
                             <FaRegLightbulb />
-                        </div>                    
+                        </div>
                     </button>
-                    
+
                     <button className="relative md:hidden" onClick={() => changeShowMobileNav(!showMobileNav)}>
                         <div className={`absolute bg-materialBlack h-1 w-6 -translate-x-6 ${showMobileNav ? 'opacity-0' : '-translate-y-2 delay-500'}
                         transition-hamburger ease-in-out dark:bg-word`}></div>
@@ -40,7 +40,7 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
                     </div>
                     {/* {theme === 'dark' ? <img src="/logoDark.gif" className="h-6 w-6" /> : <img src="/logoLight.gif" className="h-6 w-6" />} */}
                     <button onClick={() => {
-                        window.scrollTo({top:0, left:0, behavior: 'smooth'})
+                        window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })
                     }}>
                         GeraldLiu
                     </button>
@@ -63,7 +63,7 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
                                 <a href="#projects" className="hover:text-violet-500">Projects</a>
                             </div>
                         </button>
-                        
+
 
                         <button onClick={() => changeShowMobileNav(!showMobileNav)}>
                             <div className="flex items-center gap-3">
@@ -83,28 +83,29 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
                 <div className="col-start-2 row-start-1 justify-end items-center gap-5 font-bold hidden md:flex">
                     <button type='button'
                         onClick={handleThemeSwitch}
-                        className="transition-all peer"
+                        className="transition-all group"
                     >
                         <div className="transition-all hover:scale-125">
-                            <FaRegLightbulb className="text-xl"/>
-                            
+                            <FaRegLightbulb className="text-xl" />
+
                         </div>
-                    </button>
-                    <div className="absolute -translate-x-[19.5rem] rotate-45 translate-y-10 text-sm font-normal transition-all
+                        <div className="absolute translate-x-[0.1rem] rotate-45 translate-y-4 text-sm font-normal
                             border-materialBlack border-t-2 border-l-2 opacity-0 w-4 h-4 text-middle text-center z-10 bg-word
                             dark:bg-materialBlack dark:border-word
-                            peer-hover:opacity-100 "></div>
-                    <div className="absolute -translate-x-56 translate-y-[3.7rem] text-sm p-2 font-normal rounded-lg transition-all
+                            group-hover:opacity-100 "></div>
+                        <div className="absolute -translate-x-[5.5rem] translate-y-6 text-sm p-2 font-normal rounded-lg
                             border-materialBlack border-2 opacity-0 w-48 text-middle text-center bg-word  dark:bg-materialBlack
                             dark:border-word dark:text-word
-                            peer-hover:opacity-100">{theme === 'light' ? 'Sunlight hurts my eyes!' : 'Afraid of the dark?'}</div>
+                            group-hover:opacity-100">{theme === 'light' ? 'Sunlight hurts my eyes!' : 'Afraid of the dark?'}</div>
+                    </button>
+
                     <div>
                         <a href="#skills" className="transition-all hover:text-pink-500">Skills</a>
                     </div>
                     <div>
                         <a href="#projects" className="transition-all hover:text-violet-500 dark:hover:text-purple-400">Projects</a>
                     </div>
-                    
+
                     <div>
                         <a href="#contact" className="transition-all hover:text-blue-500 dark:hover:text-blue-400">Contact</a>
                     </div>
