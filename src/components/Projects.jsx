@@ -6,6 +6,7 @@ const Projects = () => {
     const { ref: project3TitleRef, inView: project3TitleIsVisible } = useInView()
     const { ref: project4TitleRef, inView: project4TitleIsVisible } = useInView()
     const { ref: project5TitleRef, inView: project5TitleIsVisible } = useInView()
+    const { ref: project6TitleRef, inView: project6TitleIsVisible } = useInView()
 
     return (
         <section id='projects'>
@@ -20,6 +21,27 @@ const Projects = () => {
                 <div className="grid grid-cols-[345px] justify-center items-center gap-2 place-content-center place-items-center 
                 xs:grid-cols-[360px] md:grid-cols-[360px_360px] lg:grid-cols-[414px_414px]
                 2xl:grid-cols-[450px_450px_450px]">
+                    {/* EVOGYM: WEBSITE */}
+                    <div className="w-full aspect-square relative shadow-xl rounded-xl group">
+                        <a href="https://butcherstorereactapp.fly.dev/" target='_blank'>
+                            <div className="bg-[#FF6B66] backdrop-blur-3xl bg-opacity-60 
+                            w-full aspect-square z-10 p-2 rounded-xl text-word 
+                        flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-500
+                        group-hover:opacity-0">
+                                <div ref={project6TitleRef} className={`text-3xl font-bold transition-all-all duration-1000 ease-in-out
+                                ${project6TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    EVOGYM
+                                </div>
+                                <div className={`text-xl transition-all-all duration-1000 delay-500 ease-in-out
+                                ${project6TitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    TS-REACT Website
+                                </div>
+                            </div>
+                            <img src="/EvoGym_Screenshot.png"
+                                className="absolute w-[310px] top-[1px] left-[1px] aspect-square rounded-xl
+                        xs:w-[358px] lg:w-[412px] 2xl:w-[448px]"></img>
+                        </a>
+                    </div>
                     {/* CountryFlagQuiz */}
                     <div className="w-full aspect-square relative shadow-xl rounded-xl group">
                         <a href="https://countryflagquiz.netlify.app" target='_blank'>

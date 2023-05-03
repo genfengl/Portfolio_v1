@@ -49,7 +49,7 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
                 {/* Mobile Nav */}
                 <div className="md:opacity-0">
                     <div className={`absolute flex flex-col gap-5 items-start self-end py-6 font-bold h-screen w-screen
-                     top-12
+                     top-12  
                     transition-all  ${showMobileNav ? 'left-0 duration-1000' : '-left-[120%] opacity-0'}`}>
                         <button onClick={() => changeShowMobileNav(!showMobileNav)}>
                             <div className="flex items-center gap-3">
@@ -74,7 +74,7 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
                         <button onClick={() => changeShowMobileNav(!showMobileNav)}>
                             <div className="flex items-center gap-3">
                                 <div className="w-2 h-2 bg-yellow-500"></div>
-                                <a href="" className="hover:text-yellow-500">Resume</a>
+                                <a href="/CV.pdf" className="hover:text-yellow-500">Resume</a>
                             </div>
                         </button>
                     </div>
@@ -110,7 +110,7 @@ const Navbar = ({ theme, handleThemeSwitch, changeShowMobileNav, showMobileNav }
                         <a href="#contact" className="transition-all hover:text-blue-500 dark:hover:text-blue-400">Contact</a>
                     </div>
                     <div>
-                        <a href="/Resume.pdf" download="Gerald Liu Resume" className="transition-all hover:text-yellow-500 dark:hover:text-yellow-300">Resume</a>
+                        <a href="/CV.pdf" download="Gerald Liu Resume" className="transition-all hover:text-yellow-500 dark:hover:text-yellow-300">Resume</a>
                     </div>
 
                 </div>
