@@ -17,7 +17,7 @@ const Email = () => {
         const { name, value } = e.target
         setContactFields({
             ...contactFields,
-            [name]: value
+            [name]: value 
         })
     }
 
