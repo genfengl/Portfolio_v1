@@ -88,7 +88,7 @@ const Projects = () => {
                     </div>
 
                     {/* NTMY */}
-                    <div className="w-full aspect-square relative shadow-xl rounded-xl group">
+                    {/* <div className="w-full aspect-square relative shadow-xl rounded-xl group">
                         <a href="https://butcherstorereactapp.fly.dev/" target='_blank'>
                             <div className="bg-[#C02433] backdrop-blur-3xl bg-opacity-60 
                             w-full aspect-square z-10 p-2 rounded-xl text-word 
@@ -107,7 +107,7 @@ const Projects = () => {
                                 className="absolute w-[310px] top-[1px] left-[1px] aspect-square rounded-xl
                         xs:w-[358px] lg:w-[412px] 2xl:w-[448px]"></img>
                         </a>
-                    </div>
+                    </div> */}
                     {/* Tic-Tac-Toe */}
                     <div className="w-full aspect-square relative shadow-xl rounded-xl group">
                         <a href="https://genfengl.github.io/TicTacToe/" target='_blank'>
@@ -130,7 +130,7 @@ const Projects = () => {
                         </a>
                     </div>
                     {/* Tangerine's Cat Food Catalogue */}
-                    <div className="w-full aspect-square relative shadow-xl rounded-xl group">
+                    {/* <div className="w-full aspect-square relative shadow-xl rounded-xl group">
                         <a href="https://tangerinecatfoodcatalogue.onrender.com/catfoods" target='_blank'>
                             <div className="bg-[#0D6EFD] backdrop-blur-3xl bg-opacity-60 
                             w-full aspect-square z-10 p-2 rounded-xl text-word 
@@ -149,7 +149,7 @@ const Projects = () => {
                                 className="absolute w-[310px] top-[1px] left-[1px] aspect-square rounded-xl
                         xs:w-[358px] lg:w-[412px] 2xl:w-[448px]"></img>
                         </a>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
