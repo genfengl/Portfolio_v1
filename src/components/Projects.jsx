@@ -23,7 +23,7 @@ const Projects = () => {
                 2xl:grid-cols-[450px_450px_450px]">
                     {/* EVOGYM: WEBSITE */}
                     <div className="w-full aspect-square relative shadow-xl rounded-xl group">
-                        <a href="https://butcherstorereactapp.fly.dev/" target='_blank'>
+                        <a href="https://evogym-ts-react-vite.netlify.app" target='_blank'>
                             <div className="bg-[#FF6B66] backdrop-blur-3xl bg-opacity-60 
                             w-full aspect-square z-10 p-2 rounded-xl text-word 
                         flex items-center flex-col justify-center gap-1 absolute ease-in-out duration-500

@@ -1,17 +1,14 @@
 import {
-    FaReact, FaJsSquare, FaPython, FaLaptopCode,
-    FaStackOverflow, FaHtml5, FaCss3Alt, FaBootstrap,
+    FaReact, FaJsSquare, 
+    FaStackOverflow, FaHtml5, FaCss3Alt, 
     FaGitAlt, FaNpm, FaNodeJs, FaBookOpen
 } from 'react-icons/fa'
 import {
     SiExpress, SiTailwindcss, SiBootstrap, SiFlask,
     SiPostgresql, SiMongodb, SiFirebase, SiNetlify,
-    SiTypescript, SiMaterialui, SiJest, SiNextdotjs, SiCsharp
+    SiMaterialui, SiJest, SiNextdotjs,
+    SiGraphql,
 } from 'react-icons/si';
-import { Player } from '@lottiefiles/react-lottie-player';
-import { useRef } from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const Skills = () => {
@@ -85,17 +82,17 @@ const Skills = () => {
                                     <FaGitAlt className='text-3xl text-red-500' />
                                     GIT
                                 </div>
-                                {/* NPM */}
-                                <div className={`flex items-center gap-3 transition-all duration-1000 delay-900 ease-in-out
-                                ${softwareDevTitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'} `}>
-                                    <FaNpm className='text-3xl text-rose-500' />
-                                    NPM
+                                {/* Jest */}
+                                <div className={`flex items-center gap-3 transition-all-all duration-1000 delay-900 ease-in-out
+                                ${learningTitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    <SiJest className='text-3xl text-violet-700' />
+                                    Jest
                                 </div>
-                                {/* Netlify */}
-                                <div className={`flex items-center gap-3 transition-all duration-1000 delay-900 ease-in-out
-                                ${softwareDevTitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'} `}>
-                                    <SiNetlify className='text-3xl text-cyan-600' />
-                                    Netlify
+                                {/* GraphQL */}
+                                <div className={`flex items-center gap-3 transition-all-all duration-1000 delay-900 ease-in-out
+                                ${learningTitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                    <SiGraphql className='text-3xl text-pink-500' />
+                                    GraphQL
                                 </div>
                             </div>
                         </div>
@@ -261,12 +258,6 @@ const Skills = () => {
                                         </svg>
                                     </div>
                                     Kotlin
-                                </div>
-                                {/* Jest */}
-                                <div className={`flex items-center gap-3 transition-all-all duration-1000 delay-300 ease-in-out
-                                ${learningTitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
-                                    <SiJest className='text-3xl text-violet-700' />
-                                    Jest
                                 </div>
                                 {/* Next.js */}
                                 <div className={`flex items-center gap-3 transition-all-all duration-1000 delay-600 ease-in-out
