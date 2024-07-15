@@ -84,13 +84,13 @@ const Skills = () => {
                                 </div>
                                 {/* Jest */}
                                 <div className={`flex items-center gap-3 transition-all-all duration-1000 delay-900 ease-in-out
-                                ${learningTitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                ${softwareDevTitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
                                     <SiJest className='text-3xl text-violet-700' />
                                     Jest
                                 </div>
                                 {/* GraphQL */}
                                 <div className={`flex items-center gap-3 transition-all-all duration-1000 delay-900 ease-in-out
-                                ${learningTitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
+                                ${softwareDevTitleIsVisible ? 'opacity-100' : 'opacity-0 translate-y-6'}`}>
                                     <SiGraphql className='text-3xl text-pink-500' />
                                     GraphQL
                                 </div>
