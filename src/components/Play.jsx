@@ -75,8 +75,8 @@ const Play = () => {
                         <div className={`grid grid-cols-[116px_116px] grid-rows-[106px_106px_106px] rounded-xl transition-all`}>
                             {/* Square top left */}
                             <div className='relative'>
-                                <img src={catPhotos[0]} className={`object-fill absolute left-0 aspect-square rounded-tl-xl 
-                                animate-catPhotosCrossfade0 opacity-0`}></img>
+                                <img src={catPhotos[0]} className='object-fill absolute left-0 aspect-square rounded-tl-xl
+                                animate-catPhotosCrossfade0 opacity-0'></img>
                                 <img src={catPhotos[1]} className='object-fill absolute left-0 aspect-square rounded-tl-xl 
                                 animate-catPhotosCrossfade1 opacity-0 '></img>
                                 <img src={catPhotos[3]} className='object-fill absolute left-0 aspect-square rounded-tl-xl  
